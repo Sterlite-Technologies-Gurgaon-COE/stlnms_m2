@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:18 IST 2023
+org.apache.servicemix.bundles.kafka_2.12-2.7.0_1.pom>central-https=
+org.apache.servicemix.bundles.kafka_2.12-2.7.0_1.jar>central-https=
+org.apache.servicemix.bundles.kafka_2.12-2.7.0_1.pom>central=
+org.apache.servicemix.bundles.kafka_2.12-2.7.0_1.jar>central=

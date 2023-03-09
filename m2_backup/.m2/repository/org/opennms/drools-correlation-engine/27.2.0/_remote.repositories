@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:23:05 IST 2023
+drools-correlation-engine-27.2.0-sources.jar>=
+drools-correlation-engine-27.2.0-xsds.jar>=
+drools-correlation-engine-27.2.0.jar>=
+drools-correlation-engine-27.2.0.pom>=

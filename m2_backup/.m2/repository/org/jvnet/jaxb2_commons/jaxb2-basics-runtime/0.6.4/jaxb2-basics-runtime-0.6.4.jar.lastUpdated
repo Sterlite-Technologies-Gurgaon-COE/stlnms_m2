@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:19:16 IST 2023
+http\://maven.opennms.org/content/repositories/sonatype-public-repo/.lastUpdated=1677750554671
+https\://repo1.maven.org/maven2/.lastUpdated=1677750556756
+@default-http\://maven.opennms.org/content/repositories/oosnmp-repo/.lastUpdated=1677750555426
+http\://maven.opennms.org/content/groups/opennms.org-release/.lastUpdated=1677750553558
+http\://maven.opennms.org/content/repositories/coova/.error=
+http\://maven.opennms.org/content/repositories/oosnmp-repo/.error=Could not transfer artifact org.jvnet.jaxb2_commons\:jaxb2-basics-runtime\:jar\:0.6.4 from/to oosnmp-repo (http\://maven.opennms.org/content/repositories/oosnmp-repo)\: Failed to transfer file http\://maven.opennms.org/content/repositories/oosnmp-repo/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.6.4/jaxb2-basics-runtime-0.6.4.jar with status code 502
+http\://maven.opennms.org/content/repositories/sonatype-public-repo/.error=
+http\://maven.opennms.org/content/groups/opennms.org-release/.error=
+http\://maven.opennms.org/content/repositories/coova/.lastUpdated=1677750556338

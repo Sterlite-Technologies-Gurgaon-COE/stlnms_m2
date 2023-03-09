@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:08 IST 2023
+jsonassert-1.2.3.jar>central=
+jsonassert-1.2.3.pom>central=
+jsonassert-1.2.3.pom>central-https=
+jsonassert-1.2.3.jar>central-https=

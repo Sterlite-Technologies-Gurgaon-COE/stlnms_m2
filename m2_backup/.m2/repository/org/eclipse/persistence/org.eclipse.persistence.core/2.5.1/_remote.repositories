@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:38 IST 2023
+org.eclipse.persistence.core-2.5.1.jar>central-https=
+org.eclipse.persistence.core-2.5.1.jar>central=
+org.eclipse.persistence.core-2.5.1.pom>central=
+org.eclipse.persistence.core-2.5.1.pom>central-https=

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:48:53 IST 2023
+commons-cli-1.2.jar>central-https=
+commons-cli-1.2.pom>central-https=
+commons-cli-1.2.jar>central=
+commons-cli-1.2.pom>central=

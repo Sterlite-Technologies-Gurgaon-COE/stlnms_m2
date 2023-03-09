@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:47:07 IST 2023
+org.apache.felix.http.parent-12.pom>central-https=
+org.apache.felix.http.parent-12.pom>central=

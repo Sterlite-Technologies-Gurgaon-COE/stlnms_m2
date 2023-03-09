@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:47:51 IST 2023
+maven-shade-plugin-2.4.3.pom>central-https=
+maven-shade-plugin-2.4.3.jar>central-https=
+maven-shade-plugin-2.4.3.jar>central=

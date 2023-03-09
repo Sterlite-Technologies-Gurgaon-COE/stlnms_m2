@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:10:48 IST 2023
+org.opennms.features.timeseries-27.2.0-sources.jar>=
+org.opennms.features.timeseries-27.2.0.pom>=
+org.opennms.features.timeseries-27.2.0.jar>=

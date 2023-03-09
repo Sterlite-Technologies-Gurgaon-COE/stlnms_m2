@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:07 IST 2023
+postgresql-42.2.18.jar>central-https=
+postgresql-42.2.18.jar>central=
+postgresql-42.2.18.pom>central-https=
+postgresql-42.2.18.pom>central=

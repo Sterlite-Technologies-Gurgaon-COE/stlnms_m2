@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:09:09 IST 2023
+org.opennms.container.shared-27.2.0.pom>=
+org.opennms.container.shared-27.2.0.zip>=
+org.opennms.container.shared-27.2.0-sources.jar>=
+org.opennms.container.shared-27.2.0.tar.gz>=

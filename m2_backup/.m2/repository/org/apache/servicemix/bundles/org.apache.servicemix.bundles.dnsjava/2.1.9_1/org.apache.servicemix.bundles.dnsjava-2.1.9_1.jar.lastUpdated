@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:58 IST 2023
+@default-http\://maven.opennms.org/content/repositories/sonatype-public-repo/.lastUpdated=1677742657547
+http\://maven.opennms.org/content/repositories/sonatype-public-repo/.error=Could not transfer artifact org.apache.servicemix.bundles\:org.apache.servicemix.bundles.dnsjava\:jar\:2.1.9_1 from/to sonatype-public-repo (http\://maven.opennms.org/content/repositories/sonatype-public-repo/)\: maven.opennms.org
+https\://repo1.maven.org/maven2/.lastUpdated=1677745018990

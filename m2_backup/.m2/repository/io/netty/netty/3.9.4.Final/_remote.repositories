@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:48:00 IST 2023
+netty-3.9.4.Final.pom>central=
+netty-3.9.4.Final.jar>central=
+netty-3.9.4.Final.jar>central-https=
+netty-3.9.4.Final.pom>central-https=

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:36 IST 2023
+grpc-core-1.30.0.jar>central=
+grpc-core-1.30.0.pom>central=
+grpc-core-1.30.0.pom>central-https=
+grpc-core-1.30.0.jar>central-https=

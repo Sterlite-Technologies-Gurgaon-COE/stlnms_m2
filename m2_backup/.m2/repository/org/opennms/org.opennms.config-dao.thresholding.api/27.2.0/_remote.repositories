@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:06:18 IST 2023
+org.opennms.config-dao.thresholding.api-27.2.0-sources.jar>=
+org.opennms.config-dao.thresholding.api-27.2.0.jar>=
+org.opennms.config-dao.thresholding.api-27.2.0.pom>=

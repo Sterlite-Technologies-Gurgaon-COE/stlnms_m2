@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:23:01 IST 2023
+org.opennms.integration-tests.trend-configuration-27.2.0.jar>=
+org.opennms.integration-tests.trend-configuration-27.2.0.pom>=

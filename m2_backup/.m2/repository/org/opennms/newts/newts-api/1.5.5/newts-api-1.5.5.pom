@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <parent>
+    <groupId>org.opennms.newts</groupId>
+    <artifactId>newts-parent</artifactId>
+    <version>1.5.5</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>newts-api</artifactId>
+  <packaging>bundle</packaging>
+
+  <name>New Timeseries Datastore :: API</name>
+  
+  <build>
+    <plugins>
+      <plugin>
+	<groupId>org.apache.felix</groupId>
+	<artifactId>maven-bundle-plugin</artifactId>
+	<extensions>true</extensions>
+	<configuration>
+	  <instructions>
+	    <Export-Package>
+	      org.opennms.newts.api* 
+	    </Export-Package>
+	    <Import-Package>
+	      <![CDATA[javax.inject*;resolution:=optional,*]]>
+	    </Import-Package>
+	    <Bundle-DocURL>https://newts.io</Bundle-DocURL>
+	  </instructions>
+	</configuration>
+      </plugin>
+      
+    </plugins>
+  </build>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-jexl3</artifactId>
+    </dependency>
+    <!--  this is needed for jexl but only at runtime so we don't end up with code deps -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
+
+  </dependencies>
+
+</project>

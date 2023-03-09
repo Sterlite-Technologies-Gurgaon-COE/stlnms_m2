@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:52:39 IST 2023
+jakarta.activation-api-1.2.1.jar>central=
+jakarta.activation-api-1.2.1.pom>central=
+jakarta.activation-api-1.2.1.jar>central-https=
+jakarta.activation-api-1.2.1.pom>central-https=

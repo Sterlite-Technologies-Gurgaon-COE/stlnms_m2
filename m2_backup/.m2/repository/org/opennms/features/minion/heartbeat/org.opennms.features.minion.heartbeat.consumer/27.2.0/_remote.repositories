@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:19:36 IST 2023
+org.opennms.features.minion.heartbeat.consumer-27.2.0.jar>=
+org.opennms.features.minion.heartbeat.consumer-27.2.0.pom>=
+org.opennms.features.minion.heartbeat.consumer-27.2.0-sources.jar>=

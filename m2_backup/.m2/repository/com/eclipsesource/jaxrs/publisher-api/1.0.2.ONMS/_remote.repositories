@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:53:26 IST 2023
+publisher-api-1.0.2.ONMS.jar>opennms-repo=
+publisher-api-1.0.2.ONMS.pom>opennms-repo=

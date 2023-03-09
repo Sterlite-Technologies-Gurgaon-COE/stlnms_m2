@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:17:37 IST 2023
+http\://maven.opennms.org/content/repositories/sonatype-public-repo/.lastUpdated=1677750455086
+https\://repo1.maven.org/maven2/.lastUpdated=1677750457123
+@default-http\://maven.opennms.org/content/repositories/oosnmp-repo/.lastUpdated=1677750455875
+http\://maven.opennms.org/content/groups/opennms.org-release/.lastUpdated=1677750454217
+http\://maven.opennms.org/content/repositories/coova/.error=
+http\://maven.opennms.org/content/repositories/oosnmp-repo/.error=Could not transfer artifact org.apache.camel\:camel-commands-core\:jar\:2.19.1 from/to oosnmp-repo (http\://maven.opennms.org/content/repositories/oosnmp-repo)\: Failed to transfer file http\://maven.opennms.org/content/repositories/oosnmp-repo/org/apache/camel/camel-commands-core/2.19.1/camel-commands-core-2.19.1.jar with status code 502
+http\://maven.opennms.org/content/repositories/sonatype-public-repo/.error=
+http\://maven.opennms.org/content/groups/opennms.org-release/.error=
+http\://maven.opennms.org/content/repositories/coova/.lastUpdated=1677750456776

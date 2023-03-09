@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:24 IST 2023
+scala-reflect-2.12.7.jar>central-https=
+scala-reflect-2.12.7.pom>central-https=
+scala-reflect-2.12.7.pom>central=
+scala-reflect-2.12.7.jar>central=

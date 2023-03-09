@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:46 IST 2023
+org.apache.felix.fileinstall-3.5.2.jar>central=
+org.apache.felix.fileinstall-3.5.2.pom>central-https=
+org.apache.felix.fileinstall-3.5.2.pom>central=
+org.apache.felix.fileinstall-3.5.2.jar>central-https=

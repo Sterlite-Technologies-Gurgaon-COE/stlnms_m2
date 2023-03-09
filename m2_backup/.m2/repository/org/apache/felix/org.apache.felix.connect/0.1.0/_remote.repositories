@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:46 IST 2023
+org.apache.felix.connect-0.1.0.pom>central-https=
+org.apache.felix.connect-0.1.0.pom>central=
+org.apache.felix.connect-0.1.0.jar>central=
+org.apache.felix.connect-0.1.0.jar>central-https=

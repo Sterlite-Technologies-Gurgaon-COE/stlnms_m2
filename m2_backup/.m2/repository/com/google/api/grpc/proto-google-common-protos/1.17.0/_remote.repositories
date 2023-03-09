@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:36 IST 2023
+proto-google-common-protos-1.17.0.jar>central-https=
+proto-google-common-protos-1.17.0.pom>central-https=
+proto-google-common-protos-1.17.0.pom>central=
+proto-google-common-protos-1.17.0.jar>central=

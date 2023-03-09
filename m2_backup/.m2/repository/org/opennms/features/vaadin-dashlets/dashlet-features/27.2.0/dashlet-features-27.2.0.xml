@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features 
+  name="dashlet-features"
+  xmlns="http://karaf.apache.org/xmlns/features/v1.4.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0 http://karaf.apache.org/xmlns/features/v1.4.0"
+>
+
+  <feature name="dashlet-alarms" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Alarms">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-alarms/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-bsm" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: BSM">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-bsm/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-summary" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Summary">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-summary/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-map" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Map">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-map/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-image" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Image">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-image/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-charts" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Charts">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-charts/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-rtc" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: RTC">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-rtc/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-rrd" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: RRD">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-rrd/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-ksc" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: KSC">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-ksc/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-topology" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Topology">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-topology/27.2.0</bundle>
+    <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.link/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-surveillance" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Surveillance">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-surveillance/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-url" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: URL">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-url/27.2.0</bundle>
+  </feature>
+  <feature name="dashlet-grafana" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Grafana">
+    <feature>opennms-core</feature>
+    <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-grafana/27.2.0</bundle>
+  </feature>
+
+</features>

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:53:09 IST 2023
+wagon-http-3.2.0.pom>central-https=
+wagon-http-3.2.0.jar>central=
+wagon-http-3.2.0.jar>central-https=
+wagon-http-3.2.0.pom>central=

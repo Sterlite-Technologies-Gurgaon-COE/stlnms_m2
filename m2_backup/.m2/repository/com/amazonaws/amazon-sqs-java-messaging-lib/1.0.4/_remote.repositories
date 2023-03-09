@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:31 IST 2023
+amazon-sqs-java-messaging-lib-1.0.4.jar>central-https=
+amazon-sqs-java-messaging-lib-1.0.4.jar>central=
+amazon-sqs-java-messaging-lib-1.0.4.pom>central=
+amazon-sqs-java-messaging-lib-1.0.4.pom>central-https=

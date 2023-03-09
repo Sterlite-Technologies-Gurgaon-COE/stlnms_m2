@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.directory</groupId>
+    <artifactId>build</artifactId>
+    <version>1.0.5</version>
+  </parent>
+
+  <groupId>org.apache.directory.server</groupId>
+  <artifactId>build</artifactId>
+  <version>1.0.2</version>
+  <name>ApacheDS</name>
+  <packaging>pom</packaging>
+
+  <url>http://directory.apache.org/apacheds/1.0</url>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Plugins</name>
+      <url>http://people.apache.org/maven-snapshot-repository</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://issues.apache.org/jira/browse/DIRSERVER</url>
+  </issueManagement>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.directory.shared</groupId>
+        <artifactId>shared-asn1-codec</artifactId>
+        <version>0.9.5.5</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.daemon</groupId>
+        <artifactId>daemon-bootstrappers</artifactId>
+        <version>1.0.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.mina</groupId>
+        <artifactId>mina-core</artifactId>
+        <version>1.0.2</version>
+      </dependency>      
+      <dependency>
+        <groupId>org.apache.mina</groupId>
+        <artifactId>mina-filter-ssl</artifactId>
+        <version>1.0.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>1.2</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-daemon</groupId>
+        <artifactId>commons-daemon</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.1</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-cli</groupId>
+        <artifactId>commons-cli</artifactId>
+        <version>1.0</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.0.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>nlog4j</artifactId>
+        <version>1.2.25</version>
+      </dependency>
+      <dependency>
+        <groupId>jdbm</groupId>
+        <artifactId>jdbm</artifactId>
+        <version>1.0</version>
+      </dependency>      
+      <dependency>
+        <groupId>antlr</groupId>
+        <artifactId>antlr</artifactId>
+        <version>2.7.6</version>
+      </dependency>      
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>3.8.1</version>
+      </dependency>      
+      <dependency>
+        <groupId>bouncycastle</groupId>
+        <artifactId>lcrypto-jdk14</artifactId>
+        <version>131</version>
+      </dependency>      
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>1.2.8</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>1.2.8</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>1.2.8</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  
+  <inceptionYear>2003</inceptionYear>
+  
+  <mailingLists>
+     <mailingList>
+      <name>The Directory Users List</name>
+      <subscribe>users-subscribe@directory.apache.org</subscribe>
+      <unsubscribe>users-unsubscribe@directory.apache.org</unsubscribe>
+      <post>users@directory.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/directory-users</archive>
+    </mailingList>
+    <mailingList>
+      <name>The Directory Developers List</name>
+      <subscribe>dev-subscribe@directory.apache.org</subscribe>
+      <unsubscribe>dev-unsubscribe@directory.apache.org</unsubscribe>
+      <post>dev@directory.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/directory-dev</archive>
+    </mailingList>
+    <mailingList>
+      <name>The Directory Commits (SVN) List</name>
+      <subscribe>commits-subscribe@directory.apache.org</subscribe>
+      <unsubscribe>commits-unsubscribe@directory.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/directory-commits</archive>
+    </mailingList>
+  </mailingLists>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.directory.shared</groupId>
+      <artifactId>shared-ldap</artifactId>
+      <version>0.9.5.5</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0-beta-5</version>
+        <configuration>
+          <tagBase>https://svn.apache.org/repos/asf/directory/apacheds/releases</tagBase>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <modules>
+        <module>core</module>
+        <module>core-shared</module>
+        <module>core-plugin</module>
+        <module>core-unit</module>
+        <module>protocol-shared</module>
+        <module>protocol-ntp</module>
+        <module>protocol-ldap</module>
+        <module>protocol-kerberos</module>
+        <module>protocol-dhcp</module>
+        <module>protocol-dns</module>
+        <module>protocol-changepw</module>
+        <module>server-tools</module>
+        <module>sar-plugin</module>
+        <module>server-sar</module>
+        <module>server-unit</module>
+        <module>server-main</module>
+        <module>server-jndi</module>
+        <module>schema-archetype</module>
+        <module>testcase-archetype</module>
+        <module>kerberos-shared</module>
+        <module>server-ssl</module>
+      </modules>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.0-alpha-3</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>2.0.2</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.2</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>jdk1.5</id>
+      <activation>
+        <jdk>1.5</jdk>
+      </activation>
+      <modules>
+        <module>core</module>
+        <module>core-shared</module>
+        <module>core-plugin</module>
+        <module>core-unit</module>
+        <module>protocol-shared</module>
+        <module>protocol-ntp</module>
+        <module>protocol-ldap</module>
+        <module>protocol-kerberos</module>
+        <module>protocol-dhcp</module>
+        <module>protocol-dns</module>
+        <module>protocol-changepw</module>
+        <module>server-tools</module>
+        <!--
+        <module>sar-plugin</module>
+        <module>server-sar</module>
+        -->
+        <module>server-unit</module>
+        <module>server-main</module>
+        <module>server-jndi</module>
+        <module>schema-archetype</module>
+        <module>testcase-archetype</module>
+        <module>kerberos-shared</module>
+
+        <!-- extra for jdk 1.5 -->
+        <module>server-ssl</module>
+        <!-- extra for jdk 1.5 -->
+
+      </modules>
+    </profile>
+
+    <profile>
+      <id>jdk1.4</id>
+      <activation>
+        <jdk>1.4</jdk>
+      </activation>
+      <modules>
+        <module>core</module>
+        <module>core-shared</module>
+        <module>core-plugin</module>
+        <module>core-unit</module>
+        <module>protocol-shared</module>
+        <module>protocol-ntp</module>
+        <module>protocol-ldap</module>
+        <module>protocol-kerberos</module>
+        <module>protocol-dhcp</module>
+        <module>protocol-dns</module>
+        <module>protocol-changepw</module>
+        <module>server-tools</module>
+
+        <!--
+        <module>sar-plugin</module>
+        -->
+
+        <module>server-unit</module>
+        <module>server-main</module>
+        <module>server-jndi</module>
+        <module>kerberos-shared</module>
+        <module>schema-archetype</module>
+        <module>testcase-archetype</module>
+      </modules>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+              <execution>
+                <phase>validate</phase>
+                <configuration>
+                  <tasks>
+                    <echo>
+====================================================================
+                       W A R N I N G
+                       -------------
+
+Build with 1.4 jvm will not include modules:
+
+ o server-ssl
+ o server-sar
+
+Use JDK 1.5 to make sure these modules build.
+====================================================================
+                    </echo>
+                  </tasks>
+                </configuration>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:svn:https://svn.apache.org/repos/asf/directory/apacheds/releases/1.0.2</connection>
+    <url>https://svn.apache.org/repos/asf/directory/apacheds/releases/1.0.2</url>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/directory/apacheds/releases/1.0.2</developerConnection>
+  </scm>
+
+  <organization>
+    <name>Apache Software Foundation</name>
+    <url>http://www.apache.org</url>
+  </organization>
+
+  <reporting>
+    <excludeDefaults>true</excludeDefaults>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>project-team</report>
+              <report>mailing-list</report>
+              <report>issue-tracking</report>
+              <report>license</report>
+              <report>scm</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+</project>

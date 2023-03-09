@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:39 IST 2023
+liquibase-core-3.6.3.pom>central=
+liquibase-core-3.6.3.jar>central=
+liquibase-core-3.6.3.pom>central-https=
+liquibase-core-3.6.3-tests.jar>central=
+liquibase-core-3.6.3-tests.jar>central-https=
+liquibase-core-3.6.3.jar>central-https=

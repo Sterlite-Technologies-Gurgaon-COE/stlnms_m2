@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features name="opennms-27.2.0" xmlns="http://karaf.apache.org/xmlns/features/v1.2.0">
+    <repository>mvn:org.apache.camel.karaf/apache-camel/2.19.1/xml/features</repository>
+    <repository>mvn:org.apache.cxf.karaf/apache-cxf/3.2.8/xml/features</repository>
+    <repository>mvn:org.apache.activemq/activemq-karaf/5.14.5/xml/features</repository>
+    <repository>mvn:org.ops4j.pax.jdbc/pax-jdbc-features/1.0.1/xml/features</repository>
+    <repository>mvn:org.apache.activemq/activemq-karaf/5.14.5/xml/features</repository>
+    <repository>mvn:org.opennms.integration.api/karaf-features/0.5.1/xml</repository>
+    <repository>mvn:com.eclipsesource.jaxrs/features/1.0.2.ONMS/xml/features</repository>
+    <feature name="opennms-amqp-event-forwarder" version="27.2.0" description="OpenNMS :: Features :: AMQP :: Event Forwarder">
+        <feature>camel-core</feature>
+        <feature>camel-blueprint</feature>
+        <feature>camel-http</feature>
+        <feature>camel-amqp</feature>
+        <feature>guava</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-dao-api</feature>
+        <bundle>mvn:org.opennms.features.amqp/org.opennms.features.amqp.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.amqp/org.opennms.features.amqp.event-forwarder/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-amqp-event-receiver" version="27.2.0" description="OpenNMS :: Features :: AMQP :: Event Receiver">
+        <feature>camel-core</feature>
+        <feature>camel-blueprint</feature>
+        <feature>camel-http</feature>
+        <feature>camel-amqp</feature>
+        <feature>guava</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-dao-api</feature>
+        <bundle>mvn:org.opennms.features.amqp/org.opennms.features.amqp.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.amqp/org.opennms.features.amqp.event-receiver/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-amqp-alarm-northbounder" version="27.2.0" description="OpenNMS :: Features :: AMQP :: Alarm Northbounder">
+        <feature>camel-core</feature>
+        <feature>camel-blueprint</feature>
+        <feature>camel-http</feature>
+        <feature>camel-amqp</feature>
+        <feature>opennms-core-camel</feature>
+        <bundle>mvn:org.opennms.features.amqp/org.opennms.features.amqp.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.amqp/org.opennms.features.amqp.alarm-northbounder/27.2.0</bundle>
+    </feature>
+    <feature name="atomikos" version="3.9.2" description="Atomikos :: TransactionEssentials">
+        <bundle>wrap:mvn:com.atomikos/atomikos-util/3.9.2</bundle>
+        <bundle>wrap:mvn:com.atomikos/transactions-api/3.9.2</bundle>
+        <bundle>wrap:mvn:com.atomikos/transactions/3.9.2</bundle>
+        <bundle>wrap:mvn:com.atomikos/transactions-jta/3.9.2</bundle>
+        <bundle>wrap:mvn:com.atomikos/transactions-jdbc/3.9.2</bundle>
+    </feature>
+    <feature name="batik" version="1.7" description="Apache :: XML Graphics :: Batik">
+        <bundle>wrap:mvn:xalan/xalan/2.7.2</bundle>
+        <bundle>wrap:mvn:xalan/serializer/2.7.2</bundle>
+        <bundle>wrap:mvn:xml-apis/xml-apis/1.4.01</bundle>
+        <bundle>wrap:mvn:xml-apis/xml-apis-ext/1.3.04</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-anim/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-awt-util/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-bridge/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-css/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-dom/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-ext/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-gvt/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-parser/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-script/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-svggen/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-svg-dom/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-transcoder/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-util/1.7</bundle>
+        <bundle>wrap:mvn:org.apache.xmlgraphics/batik-xml/1.7</bundle>
+    </feature>
+    <feature name="bcprov" version="1.66" description="Legion of the Bouncy Castle :: Java Cryptography APIs">
+        <bundle>wrap:mvn:org.bouncycastle/bcprov-jdk15on/1.66</bundle>
+    </feature>
+    <feature name="bsf" version="2.4.0" description="Apache :: Bean Scripting Framework">
+        <bundle>wrap:mvn:bsf/bsf/2.4.0</bundle>
+    </feature>
+    <feature name="c3p0" version="0.9.5.4" description="c3p0">
+        <feature>postgresql</feature>
+        <bundle>wrap:mvn:com.mchange/c3p0/0.9.5.4$Bundle-SymbolicName=c3p0&amp;Bundle-Version=0.9.5.4&amp;Import-Package=javax.management,javax.naming,javax.sql,javax.xml.parsers,org.postgresql;resolution:=optional,org.w3c.dom</bundle>
+    </feature>
+    <feature name="hikari-cp" version="2.5.1" description="HikariCP">
+        <feature>postgresql</feature>
+        <bundle>mvn:com.zaxxer/HikariCP/2.5.1</bundle>
+    </feature>
+    <feature name="commons-beanutils" version="1.9.4" description="Apache :: commons-beanutils">
+        <feature>commons-collections</feature>
+        <bundle>mvn:commons-beanutils/commons-beanutils/1.9.4</bundle>
+    </feature>
+    <feature name="commons-codec" version="1.10" description="Apache :: commons-codec">
+        <bundle>mvn:commons-codec/commons-codec/1.10</bundle>
+    </feature>
+    <feature name="commons-cli" version="1.2" description="Apache :: commons-cli">
+        <bundle>mvn:commons-cli/commons-cli/1.2</bundle>
+    </feature>
+    <feature name="commons-collections" version="3.2.2" description="Apache :: commons-collections">
+        <bundle>mvn:commons-collections/commons-collections/3.2.2</bundle>
+    </feature>
+    <feature name="commons-configuration" version="1.6" description="Apache :: commons-configuration">
+        <feature>commons-beanutils</feature>
+        <feature>commons-codec</feature>
+        <feature>commons-digester</feature>
+        <feature>commons-jxpath</feature>
+        <feature>commons-lang</feature>
+        <feature>javax.mail</feature>
+        <feature>javax.servlet</feature>
+        <bundle>wrap:mvn:org.apache.ant/ant/1.8.2</bundle>
+        <bundle>mvn:commons-configuration/commons-configuration/1.6</bundle>
+    </feature>
+    <feature name="commons-digester" version="2.1" description="Apache :: commons-digester">
+        <feature>commons-beanutils</feature>
+        <bundle>mvn:commons-digester/commons-digester/2.1</bundle>
+    </feature>
+    <feature name="commons-exec" version="1.2" description="Apache :: commons-exec">
+        <bundle>mvn:org.apache.commons/commons-exec/1.2</bundle>
+    </feature>
+    <feature name="commons-io" version="2.8.0" description="Apache :: commons-io">
+        <bundle>mvn:commons-io/commons-io/2.8.0</bundle>
+    </feature>
+    <feature name="commons-jexl" version="2.1.1" description="Apache :: commons-jexl">
+        <bundle>mvn:org.apache.commons/commons-jexl/2.1.1</bundle>
+    </feature>
+    <feature name="commons-jxpath" version="1.3" description="Apache :: commons-jxpath">
+        <feature>commons-beanutils</feature>
+        <feature>javax.servlet</feature>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jdom/1.1_4</bundle>
+        <bundle dependency="true">wrap:mvn:javax.servlet.jsp/jsp-api/2.2</bundle>
+        <bundle>mvn:commons-jxpath/commons-jxpath/1.3</bundle>
+    </feature>
+    <feature name="commons-lang" version="2.6" description="Apache :: commons-lang">
+        <bundle>mvn:commons-lang/commons-lang/2.6</bundle>
+    </feature>
+    <feature name="commons-lang3" version="3.4" description="Apache :: commons-lang3">
+        <bundle>mvn:org.apache.commons/commons-lang3/3.4</bundle>
+    </feature>
+    <feature name="commons-net" version="3.6" description="Apache :: commons-net">
+        <bundle>mvn:commons-net/commons-net/3.6</bundle>
+    </feature>
+    <feature name="dnsjava" version="2.1.9_1" description="dnsjava">
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.dnsjava/2.1.9_1</bundle>
+    </feature>
+    <feature name="dropwizard-metrics" version="3.1.2" description="Dropwizard :: Metrics">
+        <bundle>mvn:io.dropwizard.metrics/metrics-core/3.1.2</bundle>
+    </feature>
+    <feature name="fop" version="1.0" description="Apache :: XML Graphics :: FOP">
+        <bundle>wrap:mvn:org.apache.xmlgraphics/fop/1.0</bundle>
+    </feature>
+    <feature name="gemini-blueprint" version="2.0.0.RELEASE" description="Eclipse :: Gemini Blueprint">
+        <feature version="[4.2,4.3)">spring</feature>
+        <bundle>mvn:org.eclipse.gemini.blueprint/gemini-blueprint-core/2.0.0.RELEASE</bundle>
+        <bundle>mvn:org.eclipse.gemini.blueprint/gemini-blueprint-extender/2.0.0.RELEASE</bundle>
+        <bundle>mvn:org.eclipse.gemini.blueprint/gemini-blueprint-io/2.0.0.RELEASE</bundle>
+    </feature>
+    <feature name="guava" version="18.0" description="Google :: Guava">
+        <bundle dependency="true">mvn:com.google.guava/guava/18.0</bundle>
+    </feature>
+    <feature name="guava17" version="17.0" description="Google :: Guava">
+        <bundle dependency="true">mvn:com.google.guava/guava/17.0</bundle>
+    </feature>
+    <feature name="hibernate36" version="3.6.10.Final" description="Hibernate :: Hibernate ORM">
+        <bundle dependency="true">wrap:mvn:antlr/antlr/2.7.7$Import-Package=org.hibernate.hql.ast</bundle>
+        <bundle dependency="true">wrap:mvn:dom4j/dom4j/1.6.1</bundle>
+        <bundle dependency="true">mvn:commons-collections/commons-collections/3.2.2</bundle>
+        <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
+        <bundle dependency="true">mvn:org.javassist/javassist/3.18.2-GA</bundle>
+        <bundle>wrap:mvn:org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final</bundle>
+        <bundle>wrap:mvn:org.hibernate/hibernate-core/3.6.10.Final$Export-Package=org.hibernate*;version="3.6.10"</bundle>
+        <bundle>wrap:mvn:org.hibernate/hibernate-commons-annotations/3.2.0.Final</bundle>
+    </feature>
+    <feature name="hibernate-validator41" version="4.1.0.Final" description="Hibernate :: Hibernate Validator">
+        <feature>javax.validation</feature>
+        <bundle>wrap:mvn:org.hibernate/hibernate-validator-annotation-processor/4.1.0.Final</bundle>
+        <bundle>wrap:mvn:org.hibernate/hibernate-validator/4.1.0.Final</bundle>
+    </feature>
+    <feature name="java-native-access" version="4.4.0" description="Java Native Access (JNA)">
+        <bundle>mvn:net.java.dev.jna/jna/4.4.0</bundle>
+        <bundle>mvn:net.java.dev.jna/jna-platform/4.4.0</bundle>
+    </feature>
+    <feature name="javax.mail" version="1.4.5" description="javax.mail">
+        <bundle>mvn:javax.mail/mail/1.4.5</bundle>
+    </feature>
+    <feature name="javax.servlet" version="3.1.0" description="javax.servlet">
+        <bundle start-level="30">mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
+    </feature>
+    <feature name="javax.validation" version="1.0.0.GA" description="javax.validation">
+        <bundle dependency="true">wrap:mvn:javax.validation/validation-api/1.0.0.GA$Bundle-SymbolicName=javax.validation:validation-api&amp;Bundle-Version=1.0.0&amp;Export-Package=javax.validation;version="1.0.0",javax.validation.bootstrap;version="1.0.0",javax.validation.constraints;version="1.0.0",javax.validation.groups;version="1.0.0",javax.validation.metadata;version="1.0.0",javax.validation.spi;version="1.0.0"</bundle>
+    </feature>
+    <feature name="jaxb" version="2.5.1" description="EclipseLink :: MOXy">
+        <feature>javax.mail</feature>
+        <bundle>mvn:org.eclipse.persistence/org.eclipse.persistence.moxy/2.5.1</bundle>
+        <bundle>mvn:org.eclipse.persistence/org.eclipse.persistence.core/2.5.1</bundle>
+        <bundle>mvn:org.eclipse.persistence/org.eclipse.persistence.asm/2.5.1</bundle>
+        <bundle>mvn:org.eclipse.persistence/org.eclipse.persistence.antlr/2.5.1</bundle>
+    </feature>
+    <feature name="jcifs" version="2.1.4" description="jcifs">
+        <feature>bcprov</feature>
+        <bundle>mvn:eu.agno3.jcifs/jcifs-ng/2.1.4</bundle>
+    </feature>
+    <feature name="jfreechart" version="1.0.13" description="JFree :: JFreeChart">
+        <bundle>wrap:mvn:jfree/jfreechart/1.0.13</bundle>
+        <bundle>wrap:mvn:jfree/jcommon/1.0.16</bundle>
+    </feature>
+    <feature name="jldap" version="4.3" description="OpenLDAP :: JLDAP">
+        <bundle>wrap:mvn:com.novell.ldap/jldap/4.3</bundle>
+    </feature>
+    <feature name="joda-time" version="2.1" description="Joda :: Joda-Time">
+        <bundle>mvn:joda-time/joda-time/2.1</bundle>
+    </feature>
+    <feature name="jolokia-client" version="1.3.3" description="Jolokia-Client">
+        <feature>javax.servlet</feature>
+        <feature>json-simple</feature>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.4</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.2</bundle>
+        <bundle>mvn:org.jolokia/jolokia-client-java/1.3.3</bundle>
+    </feature>
+    <feature name="jrobin" version="1.6.0" description="JRobin">
+        <bundle>mvn:org.jrobin/jrobin/1.6.0</bundle>
+    </feature>
+    <feature name="json-lib" version="2.2.3" description="json-lib">
+        <bundle>wrap:mvn:net.sf.ezmorph/ezmorph/1.0.6</bundle>
+        <bundle>wrap:mvn:net.sf.json-lib/json-lib/2.2.3/jar/jdk15</bundle>
+    </feature>
+    <feature name="lmax-disruptor" version="3.3.2" description="LMAX :: Disruptor">
+        <bundle>mvn:com.lmax/disruptor/3.3.2</bundle>
+    </feature>
+    <feature name="org.json" version="20171018" description="org.json">
+        <bundle>wrap:mvn:org.json/json/20171018$Export-Package=org.json</bundle>
+    </feature>
+    <feature name="json-simple" version="1.1.1" description="json-simple">
+        <bundle>wrap:mvn:com.googlecode.json-simple/json-simple/1.1.1</bundle>
+    </feature>
+    <feature name="owasp-encoder" version="1.2.1" description="OWASP :: Encoder">
+        <bundle>wrap:mvn:org.owasp.encoder/encoder/1.2.1$Export-Package=org.owasp.encoder</bundle>
+    </feature>
+    <feature name="owasp-html-sanitizer" version="20170515.1" description="OWASP :: HTML Sanitizer">
+        <feature>guava</feature>
+        <bundle>wrap:mvn:com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer/20170515.1$Export-Package=org.owasp.html</bundle>
+    </feature>
+    <feature name="postgresql" version="42.2.18" description="PostgreSQL :: JDBC Driver">
+        <feature>pax-jdbc-spec</feature>
+        <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
+        <bundle>wrap:mvn:org.postgresql/postgresql/42.2.18</bundle>
+    </feature>
+    <feature name="rate-limited-logger" version="2.0.1" description="Rate Limited Logger">
+        <feature>joda-time</feature>
+        <bundle>wrap:mvn:com.swrve/rate-limited-logger/2.0.1</bundle>
+    </feature>
+    <feature name="spring-security32" version="3.2.7.RELEASE" description="Spring :: Security">
+        <feature version="[4.2,4.3)">spring-web</feature>
+        <feature>commons-codec</feature>
+        <feature>javax.servlet</feature>
+        <bundle>wrap:mvn:org.springframework.ldap/spring-ldap-core/1.3.2.RELEASE$Export-Package=org.springframework.ldap*;version="1.3.2"</bundle>
+        <bundle>mvn:org.springframework.security/spring-security-aspects/3.2.7.RELEASE</bundle>
+        <bundle>mvn:org.springframework.security/spring-security-core/3.2.7.RELEASE</bundle>
+        <bundle>mvn:org.springframework.security/spring-security-config/3.2.7.RELEASE</bundle>
+        <bundle>mvn:org.springframework.security/spring-security-ldap/3.2.7.RELEASE</bundle>
+        <bundle>mvn:org.springframework.security/spring-security-remoting/3.2.7.RELEASE</bundle>
+        <bundle>mvn:org.springframework.security/spring-security-web/3.2.7.RELEASE</bundle>
+    </feature>
+    <feature name="jicmp" version="2.0.1" description="jicmp">
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms/jicmp-api/2.0.1</bundle>
+    </feature>
+    <feature name="jicmp6" version="2.0.1" description="jicmp6">
+        <bundle>mvn:org.opennms/jicmp6-api/2.0.1</bundle>
+    </feature>
+    <feature name="quartz" version="2.2.3" description="quartz">
+        <feature>c3p0</feature>
+        <bundle>wrap:mvn:org.quartz-scheduler/quartz/2.2.3</bundle>
+    </feature>
+    <feature name="twitter4j" version="3.0.6" description="Twitter4J">
+        <bundle>wrap:mvn:org.twitter4j/twitter4j-core/3.0.6</bundle>
+    </feature>
+    <feature name="opentracing-api" version="0.31.0" description="OpenTracing API">
+        <bundle dependency="true">wrap:mvn:io.opentracing/opentracing-api/0.31.0</bundle>
+        <bundle dependency="true">wrap:mvn:io.opentracing/opentracing-noop/0.31.0</bundle>
+        <bundle dependency="true">wrap:mvn:io.opentracing/opentracing-util/0.31.0</bundle>
+    </feature>
+    <feature name="opennms-core-tracing" version="27.2.0" description="OpenNMS :: Core :: Tracing">
+        <feature>opentracing-api</feature>
+        <bundle>mvn:org.opennms.core.tracing/org.opennms.core.tracing.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.tracing/org.opennms.core.tracing.registry/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.xml/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-tracing-jaeger" version="27.2.0" description="OpenNMS :: Core :: Tracing :: Jeager Tracer">
+        <feature>opennms-core-tracing</feature>
+        <bundle>mvn:org.opennms.core.tracing/org.opennms.core.tracing.jaeger-osgi/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.tracing/org.opennms.core.tracing.jaeger-tracer/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-activemq-pool" version="27.2.0" description="OpenNMS :: Features :: ActiveMQ :: Pool">
+        <feature>activemq-client</feature>
+        <feature>camel-core</feature>
+        <feature>camel-jms</feature>
+        <feature>opennms-core</feature>
+        <bundle dependency="true">mvn:org.ow2.asm/asm-all/5.2</bundle>
+        <bundle>mvn:org.opennms.features.activemq/org.opennms.features.activemq.pool/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-activemq-shell" description="OpenNMS :: Features :: ActiveMQ :: Shell" version="27.2.0">
+      <!-- Additional dependenices are expected to be pulled from the root classloader -->
+      <bundle>mvn:org.opennms.features.activemq/org.opennms.features.activemq.shell/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-bootstrap" version="27.2.0" description="opennms-bootstrap">
+        <bundle>wrap:mvn:org.opennms/opennms-bootstrap/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-identity" version="27.2.0" description="OpenNMS :: Features :: OpenNMS Identity">
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.opennms-identity/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-core" version="27.2.0" description="OpenNMS :: Core">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature version="[4.2,4.3)">spring-orm</feature>
+        <feature>commons-io</feature>
+        <feature>dnsjava</feature>
+        <feature>jaxb</feature>
+        <feature>owasp-encoder</feature>
+        <feature>owasp-html-sanitizer</feature>
+        <feature>commons-jexl</feature>
+        <bundle dependency="true">wrap:mvn:javax.inject/javax.inject/1</bundle>
+        <bundle dependency="true">mvn:org.codehaus.jackson/jackson-core-asl/1.9.13</bundle>
+        <bundle dependency="true">mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.13</bundle>
+        <bundle dependency="true">mvn:org.codehaus.jackson/jackson-xc/1.9.13</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.criteria/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.lib/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.logging/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.soa/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.spring/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.sysprops/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.xml/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-util/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-camel" version="27.2.0" description="OpenNMS :: Core :: Camel">
+        <feature>camel-core</feature>
+        <feature>camel-http</feature>
+        <feature>camel-netty4</feature>
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.core/org.opennms.core.camel/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-daemon" version="27.2.0" description="OpenNMS :: Core :: Daemon">
+        <feature>activemq-client</feature>
+        <feature>camel-jms</feature>
+        <feature>guava</feature>
+        <feature>opennms-activemq-pool</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-config</feature>
+        <feature>opennms-icmp-api</feature>
+        <feature>opennms-model</feature>
+        <bundle dependency="true">mvn:org.ow2.asm/asm-all/5.2</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.daemon/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-db" version="27.2.0" description="OpenNMS :: Core :: Database">
+        <feature>atomikos</feature>
+        <feature>c3p0</feature>
+        <feature>hikari-cp</feature>
+        <feature>commons-io</feature>
+        <feature>postgresql</feature>
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.core/org.opennms.core.db/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-web" version="27.2.0" description="OpenNMS :: Core :: Web">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.4</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.2</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.web/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-distributed-core-api" version="27.2.0" description="OpenNMS :: Distributed :: Core :: API">
+        <bundle>mvn:org.opennms.features.distributed/core-api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-distributed-core-impl" description="OpenNMS :: Distributed :: Core :: Impl" version="27.2.0">
+        <feature>opennms-distributed-core-api</feature>
+        <bundle>mvn:org.opennms.features.distributed/core-impl/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-model" version="27.2.0" description="OpenNMS :: Model">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature version="[4.2,4.3)">spring-jdbc</feature>
+        <feature version="[4.2,4.3)">spring-orm</feature>
+        <feature version="[4.2,4.3)">spring-tx</feature>
+        <feature>commons-io</feature>
+        <feature>commons-lang</feature>
+        <feature>dnsjava</feature>
+        <feature>hibernate36</feature>
+        <feature>jaxb</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-events-api</feature>
+        <feature>opennms-poller-api</feature>
+        <feature>opennms-rrd-api</feature>
+        <feature>opennms-snmp</feature>
+        <bundle>mvn:org.opennms/opennms-model/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-collection-api" version="27.2.0" description="OpenNMS :: Collection :: API">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>commons-jexl</feature>
+        <feature>opennms-model</feature>
+        <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-collection-commands" version="27.2.0" description="OpenNMS :: Collection :: Shell Commands">
+        <feature>dropwizard-metrics</feature>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.commands/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-collection-core" version="27.2.0" description="OpenNMS :: Collection :: Core">
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-config</feature>
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <feature>opennms-dao-api</feature>
+        <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.core/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-collection-persistence-rrd" version="27.2.0" description="OpenNMS :: Collection :: Persistence :: RRD">
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-rrd-api</feature>
+        <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.persistence.rrd/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-config-api" version="27.2.0" description="OpenNMS :: Configuration :: API">
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-model</feature>
+        <bundle>mvn:org.opennms/opennms-config-api/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-config-model/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-config-jaxb/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-config-jaxb" version="27.2.0" description="OpenNMS :: Configuration :: JAXB">
+        <feature>hibernate36</feature>
+        <feature>commons-lang</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-snmp</feature>
+        <bundle>mvn:org.opennms/opennms-config-jaxb/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-config" version="27.2.0" description="OpenNMS :: Configuration">
+        <feature>c3p0</feature>
+        <feature>hikari-cp</feature>
+        <feature>commons-codec</feature>
+        <feature>opennms-config-api</feature>
+        <feature>opennms-core-db</feature>
+        <feature>opennms-poller-api</feature>
+        <feature>opennms-rrd-api</feature>
+        <feature>opennms-snmp</feature>
+        <bundle dependency="true">wrap:mvn:com.googlecode.concurrent-locks/concurrent-locks/1.0.0</bundle>
+        <bundle dependency="true">wrap:mvn:org.jasypt/jasypt/1.9.0</bundle>
+        <bundle>mvn:org.opennms/opennms-config/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-kafka" version="27.2.0" description="OpenNMS :: Features :: Kafka">
+        <bundle dependency="true">mvn:org.scala-lang/scala-library/2.12.12</bundle>
+        <bundle dependency="true">mvn:com.typesafe.scala-logging/scala-logging_2.12/3.9.2</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.10.5</bundle>
+        <bundle dependency="true">wrap:mvn:com.yammer.metrics/metrics-core/2.2.0$Bundle-Version=2.2.0&amp;Export-Package=*;-noimport:=true;version="2.2.0"</bundle>
+        <bundle dependency="true">wrap:mvn:com.yammer.metrics/metrics-annotation/2.2.0$Bundle-Version=2.2.0&amp;Export-Package=*;-noimport:=true;version="2.2.0"</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.kafka_2.12/2.7.0_1</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.kafka-clients/2.7.0_1</bundle>
+        <bundle dependency="true">mvn:com.github.luben/zstd-jni/1.4.5-6</bundle>
+    </feature>
+    <feature name="opennms-aws-sqs" version="27.2.0" description="OpenNMS :: Features :: AWS SQS">
+        <bundle dependency="true">wrap:mvn:com.amazonaws/aws-java-sdk-core/1.11.218</bundle>
+        <bundle dependency="true">wrap:mvn:com.amazonaws/aws-java-sdk-sqs/1.11.218</bundle>
+        <bundle dependency="true">wrap:mvn:com.amazonaws/amazon-sqs-java-messaging-lib/1.0.4</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.10.5</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-api" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: API">
+        <feature>dropwizard-metrics</feature>
+        <feature>guava</feature>
+        <feature>javax.mail</feature>
+        <feature>org.json</feature>
+        <feature>rate-limited-logger</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-distributed-core-api</feature>
+        <feature>opennms-core-tracing</feature>
+        <bundle>mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.sink/org.opennms.core.ipc.sink.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.sink/org.opennms.core.ipc.sink.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.sink/org.opennms.core.ipc.sink.xml/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-offheap" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: OffHeap">
+        <feature>opennms-core-ipc-sink-api</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>rate-limited-logger</feature>
+        <bundle>mvn:org.opennms.core.ipc.sink/org.opennms.core.ipc.sink.offheap/27.2.0</bundle>
+        <bundle>wrap:mvn:com.squareup.tape2/tape/2.0.0-beta1</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-camel-common" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: Camel :: Common">
+        <feature>opennms-core-ipc-sink-api</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>camel-blueprint</feature>
+        <feature>camel-jms</feature>
+        <bundle>mvn:org.opennms.core.ipc.sink.camel/org.opennms.core.ipc.sink.camel.common/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-camel" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: Camel :: Client">
+        <feature>opennms-core-ipc-sink-camel-common</feature>
+        <bundle>mvn:org.opennms.core.ipc.sink.camel/org.opennms.core.ipc.sink.camel.client/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-camel-server" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: Camel :: Server">
+        <feature>opennms-core-ipc-sink-camel-common</feature>
+        <bundle>mvn:org.opennms.core.ipc.sink.camel/org.opennms.core.ipc.sink.camel.server/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-kafka-common" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: Kafka :: Common">
+        <feature>opennms-core-ipc-sink-api</feature>
+        <feature>opennms-kafka</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-core-ipc-kafka-shell</feature>
+        <bundle>mvn:org.opennms.core.health/org.opennms.core.health.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.common/org.opennms.core.ipc.common.kafka/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-kafka" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: Kafka :: Client">
+        <feature>opennms-core-ipc-sink-kafka-common</feature>
+        <bundle>mvn:org.opennms.core.ipc.sink.kafka/org.opennms.core.ipc.sink.kafka.client/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-kafka-server" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: Kafka :: Server">
+        <feature>opennms-core-ipc-sink-kafka-common</feature>
+        <bundle>mvn:org.opennms.core.ipc.sink.kafka/org.opennms.core.ipc.sink.kafka.server/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-sink-aws-sqs" version="27.2.0" description="OpenNMS :: Core :: IPC :: Sink :: AWS SQS Impl.">
+        <feature>guava</feature>
+        <feature>opennms-core-ipc-sink-api</feature>
+        <feature>opennms-aws-sqs</feature>
+        <bundle>mvn:org.opennms.core.ipc.common/org.opennms.core.ipc.common.aws-sqs/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.sink.aws.sqs/org.opennms.core.ipc.sink.aws.sqs.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.sink.aws.sqs/org.opennms.core.ipc.sink.aws.sqs.client/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-rpc-api" version="27.2.0" description="OpenNMS :: Core :: IPC :: RPC :: API">
+        <feature>camel-blueprint</feature>
+        <feature>camel-jms</feature>
+        <feature>org.json</feature>
+        <feature>javax.mail</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-distributed-core-api</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-core-tracing</feature>
+        <bundle>wrap:mvn:ch.hsr/geohash/1.4.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.utils/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.xml/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.camel/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-rpc-jms" version="27.2.0" description="OpenNMS :: Core :: IPC :: RPC :: JMS Impl.">
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <feature>opennms-dao-api</feature>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.jms-impl/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-rpc-aws-sqs" version="27.2.0" description="OpenNMS :: Core :: IPC :: RPC :: AWQ SQS Impl.">
+        <feature>opennms-aws-sqs</feature>
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <bundle>mvn:org.opennms.core.ipc.common/org.opennms.core.ipc.common.aws-sqs/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.aws-sqs-impl/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-rpc-kafka" version="27.2.0" description="OpenNMS :: Core :: IPC :: RPC :: Kafka Impl.">
+        <feature>opennms-kafka</feature>
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <feature>opennms-core-ipc-kafka-shell</feature>
+        <feature>resilience4j</feature>
+        <bundle>mvn:org.opennms.core.health/org.opennms.core.health.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.common/org.opennms.core.ipc.common.kafka/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.kafka/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-rpc-commands" version="27.2.0" description="OpenNMS :: Core :: IPC :: RPC :: Shell Commands">
+        <feature>dropwizard-metrics</feature>
+        <feature>guava</feature>
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.commands/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-core-ipc-kafka-shell" version="27.2.0" description="OpenNMS :: Core :: IPC :: Kafka :: Shell Commands">
+        <feature>opennms-kafka</feature>
+        <feature>opennms-distributed-core-api</feature>
+        <bundle>mvn:org.opennms.core.ipc.common/org.opennms.core.ipc.common.kafka/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.common/org.opennms.core.ipc.common.kafka-shell/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-dao-api" version="27.2.0" description="OpenNMS :: DAO :: API">
+        <feature>opennms-core</feature>
+        <feature>opennms-model</feature>
+        <feature>opennms-config-api</feature>
+        <bundle>mvn:org.opennms.features.reporting/org.opennms.features.reporting.model/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.dao-api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-dao" version="27.2.0" description="OpenNMS :: DAO">
+        <feature>commons-jxpath</feature>
+        <feature>guava</feature>
+        <feature>hibernate-validator41</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-collection-core</feature>
+        <feature>opennms-collection-persistence-rrd</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-core-daemon</feature>
+        <feature>opennms-measurements-api</feature>
+        <feature>opennms-xml-collector</feature>
+        <feature>opennms-core-web</feature>
+        <feature>opennms-config-dao-api</feature>
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.dao-impl/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-events-api" version="27.2.0" description="OpenNMS :: Events :: API">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>camel-core</feature>
+        <feature>commons-lang3</feature>
+        <feature>jaxb</feature>
+        <feature>javax.validation</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-snmp</feature>
+        <feature>opennms-core-ipc-sink-api</feature>
+        <bundle>mvn:org.opennms.features.events/org.opennms.features.events.api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-events-commands" version="27.2.0" description="OpenNMS :: Events :: Shell Commands">
+        <feature>commons-jexl</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.events/org.opennms.features.events.commands/27.2.0</bundle>
+    </feature>
+    <!--This feature lives on Minion, OpenNMS and Sentinel is the reason it needs separate feature.-->
+    <feature name="opennms-send-event-command" version="27.2.0" description="OpenNMS :: Events :: Send :: Command">
+        <feature>opennms-events-api</feature>
+        <feature>opennms-model</feature>
+        <bundle>mvn:org.opennms.features.events.sink/org.opennms.features.events.sink.command/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-events-sink-dispatcher" version="27.2.0" description="OpenNMS :: Events :: Sink Dispatcher">
+        <feature>opennms-config-api</feature>
+        <feature>opennms-events-api</feature>
+        <bundle>mvn:org.opennms.features.events.sink/org.opennms.features.events.sink.dispatcher/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-icmp-api" version="27.2.0" description="OpenNMS :: ICMP :: API">
+        <feature>guava</feature>
+        <feature>opennms-core</feature>
+        <bundle dependency="true">mvn:org.opennms.lib/org.opennms.lib.tracker/0.7</bundle>
+        <bundle>mvn:org.opennms/opennms-icmp-api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-icmp-best" version="27.2.0" description="OpenNMS :: ICMP :: Best Match">
+        <feature>opennms-icmp-api</feature>
+        <feature>opennms-icmp-jna</feature>
+        <feature>opennms-icmp-jni</feature>
+        <feature>opennms-icmp-jni6</feature>
+        <bundle>mvn:org.opennms/opennms-icmp-best/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-icmp-jna" version="27.2.0" description="OpenNMS :: ICMP :: JNA">
+        <feature>guava</feature>
+        <feature>opennms-icmp-api</feature>
+        <feature>java-native-access</feature>
+        <bundle>mvn:org.opennms.core/org.opennms.core.icmp-jna/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-icmp-jna/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-icmp-jni" version="27.2.0" description="OpenNMS :: ICMP :: JNI">
+        <feature>opennms-icmp-api</feature>
+        <feature>jicmp</feature>
+        <bundle>mvn:org.opennms/opennms-icmp-jni/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-icmp-jni6" version="27.2.0" description="OpenNMS :: ICMP :: JNI (with IPv6 support)">
+        <feature>opennms-icmp-jni</feature>
+        <feature>jicmp6</feature>
+        <bundle>mvn:org.opennms/opennms-icmp-jni6/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-javamail" version="27.2.0" description="OpenNMS :: Javamail">
+        <feature>commons-lang</feature>
+        <feature>javax.mail</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-config-api</feature>
+        <bundle>mvn:org.opennms/opennms-javamail-api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-poller-api" version="27.2.0" description="OpenNMS :: Poller :: API">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>hibernate36</feature>
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.poller/org.opennms.features.poller.api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-measurements-api" version="27.2.0" description="OpenNMS :: Measurements :: API">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>commons-lang</feature>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.measurements/org.opennms.features.measurements.api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-measurements-shell" version="27.2.0" description="OpenNMS :: Measurements :: Shell">
+        <!-- Dependencies pulled from root classloader -->
+        <bundle>mvn:org.opennms.features.measurements/org.opennms.features.measurements.shell/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-osgi-jsr223" version="27.2.0" description="OpenNMS :: OSGi JSR-223">
+        <bundle>mvn:org.opennms.features/org.opennms.features.osgi-jsr223/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-provisioning" version="27.2.0" description="OpenNMS :: Provisioning">
+        <feature>commons-lang</feature>
+        <feature>commons-beanutils</feature>
+        <feature>javax.validation</feature>
+        <feature>joda-time</feature>
+        <feature>opennms-provisioning-api</feature>
+        <bundle>mvn:org.opennms/opennms-provision-persistence/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-provisioning-api" version="27.2.0" description="OpenNMS :: Provisioning :: API">
+        <bundle dependency="true">mvn:org.apache.mina/mina-core/2.0.16</bundle>
+        <bundle dependency="true">mvn:io.netty/netty/3.9.4.Final</bundle>
+        <bundle>mvn:org.opennms/opennms-provision-api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-rrd-api" version="27.2.0" description="OpenNMS :: RRD :: API">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms/opennms-rrd-api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-rrd-jrobin" version="27.2.0" description="OpenNMS :: RRD :: JRobin">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>jrobin</feature>
+        <feature>opennms-rrd-api</feature>
+        <bundle>mvn:org.opennms/opennms-rrd-jrobin/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-snmp" version="27.2.0" description="OpenNMS :: Core :: SNMP">
+        <feature>org.json</feature>
+        <bundle>mvn:org.opennms.core/org.opennms.core.logging/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.implementations.snmp4j/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.joesnmp/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.sysprops/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.lib/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-snmp-commands" version="27.2.0" description="OpenNMS :: Core :: SNMP :: Commands">
+        <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.commands/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.profile-mapper/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-icmp-commands" version="27.2.0" description="OpenNMS :: Core :: ICMP :: Commands">
+        <feature>opennms-icmp-api</feature>
+        <bundle>mvn:org.opennms/opennms-icmp-commands/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-syslogd" version="27.2.0" description="OpenNMS :: Syslogd">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>camel-core</feature>
+        <feature>camel-http</feature>
+        <feature>camel-netty4</feature>
+        <feature>guava</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-core-daemon</feature>
+        <feature>opennms-core-db</feature>
+        <feature>opennms-config</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-core-ipc-sink-api</feature>
+        <bundle>mvn:org.opennms.features.events/org.opennms.features.events.syslog/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-syslogd-listener-javanet" version="27.2.0" description="OpenNMS :: Syslogd :: Listener :: java.net">
+        <feature>camel-blueprint</feature>
+        <feature>opennms-syslogd</feature>
+        <bundle>blueprint:mvn:org.opennms.features.events/org.opennms.features.events.syslog/27.2.0/xml/blueprint-syslog-listener-javanet</bundle>
+    </feature>
+    <feature name="opennms-syslogd-listener-camel-netty" version="27.2.0" description="OpenNMS :: Syslogd :: Listener :: camel-netty">
+        <feature>camel-blueprint</feature>
+        <feature>opennms-syslogd</feature>
+        <bundle>blueprint:mvn:org.opennms.features.events/org.opennms.features.events.syslog/27.2.0/xml/blueprint-syslog-listener-camel-netty</bundle>
+    </feature>
+    <feature name="opennms-thresholding-api" version="27.2.0" description="OpenNMS :: Thresholding :: API">
+        <feature>opennms-config</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-collection-api</feature>
+        <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.thresholding.api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-trapd" version="27.2.0" description="OpenNMS :: Trapd">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature>camel-core</feature>
+        <feature>camel-http</feature>
+        <feature>guava</feature>
+        <feature>opennms-distributed-core-api</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-core-daemon</feature>
+        <feature>opennms-core-db</feature>
+        <feature>opennms-config</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-events-api</feature>
+        <feature>opennms-snmp</feature>
+        <feature>opennms-core-ipc-sink-api</feature>
+        <bundle>mvn:org.opennms.features.events/org.opennms.features.events.traps/27.2.0</bundle>
+    </feature>
+    <feature name="tsrm-troubleticketer" version="27.2.0" description="OpenNMS :: Features :: Ticketing :: Tivoli Service Request Manager (TSRM)">
+        <feature version="3.2.8">cxf-jaxws</feature>
+        <feature>javax.servlet</feature>
+        <bundle>mvn:org.opennms.features.ticketing/org.opennms.features.ticketing.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features/opennms-integration-tsrm/27.2.0</bundle>
+    </feature>
+    <feature name="eif-adapter" version="27.2.0" description="OpenNMS :: Features :: EIF Adapter">
+        <feature>camel-core</feature>
+        <feature>camel-blueprint</feature>
+        <feature>camel-netty4</feature>
+        <feature>opennms-core-camel</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-dao-api</feature>
+        <bundle>mvn:org.opennms.features/org.opennms.features.eif-adapter/27.2.0</bundle>
+    </feature>
+    <feature name="smack" version="4.0.6" description="Ignite Realtime :: Smack">
+        <bundle>wrap:mvn:org.igniterealtime.smack/smack-core/4.0.6</bundle>
+        <bundle>wrap:mvn:org.igniterealtime.smack/smack-tcp/4.0.6</bundle>
+        <bundle>wrap:mvn:org.igniterealtime.smack/smack-extensions/4.0.6</bundle>
+        <bundle>wrap:mvn:org.igniterealtime.smack/smack-resolver-javax/4.0.6</bundle>
+        <bundle>wrap:mvn:xmlpull/xmlpull/1.1.3.1</bundle>
+    </feature>
+    <feature name="wsman-integration" version="27.2.0" description="OpenNMS :: Features :: WS-Man Integration">
+        <feature>guava17</feature>
+        <feature>javax.servlet</feature>
+        <feature version="3.2.8">cxf-jaxws</feature>
+        <feature version="3.2.8">cxf-ws-addr</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-poller-monitors-core</feature>
+        <feature>opennms-provisioning-api</feature>
+        <feature>opennms-dao-api</feature>
+        <bundle>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxws-api-2.2/2.9.0</bundle>
+        <bundle>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.saaj-api-1.3/2.9.0</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xerces/2.11.0_1</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.bcel/5.2_4</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xalan/2.7.2_3</bundle>
+        <bundle>mvn:org.opennms.core.wsman/org.opennms.core.wsman.api/1.2.3</bundle>
+        <bundle>mvn:org.opennms.core.wsman/org.opennms.core.wsman.cxf/1.2.3</bundle>
+        <bundle>mvn:org.opennms.features/org.opennms.features.wsman/27.2.0</bundle>
+    </feature>
+    <feature name="wmi-integration" version="27.2.0" description="OpenNMS :: Features :: WMI Integration">
+        <feature>commons-cli</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-provisioning-api</feature>
+        <feature>jcifs</feature>
+        <bundle dependency="true">wrap:mvn:com.github.skyghis/j-interop-ng/3.0.0</bundle>
+        <bundle dependency="true">wrap:mvn:com.github.skyghis/j-interop-ng-deps/3.0.0</bundle>
+        <bundle>mvn:org.opennms/opennms-wmi/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-prometheus-collector" version="27.2.0" description="OpenNMS :: Features :: Prometheus Collector">
+        <feature>opennms-core-web</feature>
+        <feature>opennms-collection-api</feature>
+        <bundle>mvn:org.opennms.features/org.opennms.features.prometheus-collector/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-xml-collector" version="27.2.0" description="OpenNMS :: Protocols :: XML Collector">
+        <feature>commons-io</feature>
+        <feature>commons-jxpath</feature>
+        <feature>commons-lang</feature>
+        <feature>guava</feature>
+        <feature>joda-time</feature>
+        <feature>opennms-core-web</feature>
+        <bundle>wrap:mvn:com.jcraft/jsch/0.1.51</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.oro/2.0.8_6</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ezmorph/1.0.6_1</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.json-lib/2.4_1</bundle>
+        <bundle dependency="true">mvn:org.codehaus.jackson/jackson-core-asl/1.9.13</bundle>
+        <bundle dependency="true">mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.13</bundle>
+        <bundle dependency="true">mvn:org.codehaus.jackson/jackson-xc/1.9.13</bundle>
+        <bundle dependency="true">wrap:mvn:com.jcraft/jsch/0.1.51</bundle>
+        <bundle dependency="true">wrap:mvn:org.jsoup/jsoup/1.7.2</bundle>
+        <bundle>mvn:org.opennms.protocols/org.opennms.protocols.xml/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-provisioning-detectors" version="27.2.0" description="OpenNMS :: Provisioning :: Detectors">
+        <feature>bsf</feature>
+        <feature>commons-cli</feature>
+        <feature>javax.servlet</feature>
+        <feature>jcifs</feature>
+        <feature>jldap</feature>
+        <feature>spring-security32</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-core-web</feature>
+        <feature>opennms-dhcpd</feature>
+        <feature>opennms-icmp-api</feature>
+        <feature>opennms-provisioning-api</feature>
+        <feature>wsman-integration</feature>
+        <feature>wmi-integration</feature>
+        <bundle>mvn:org.opennms.core.jmx/org.opennms.core.jmx.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.jmx/org.opennms.core.jmx.impl/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-bsf/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-datagram/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-dhcp/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-generic/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-jdbc/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-jmx/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-jms/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-lineoriented/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-rdns-lookup/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-simple/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-ssh/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-web/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-detector-registry/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-dhcpd" description="OpenNMS :: Features :: DHCPD" version="27.2.0">
+        <bundle>mvn:org.opennms.features/org.opennms.features.dhcpd/27.2.0</bundle>
+        <bundle>mvn:com.helger/dhcp4java/1.1.0</bundle>
+    </feature>
+    <feature name="opennms-provisioning-shell" version="27.2.0" description="OpenNMS :: Provisioning :: Shell">
+        <bundle>mvn:org.opennms/opennms-provision-shell/27.2.0</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.4</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.2</bundle>
+    </feature>
+    <feature name="opennms-vmware" version="27.2.0" description="OpenNMS :: Integrations :: VMware Integration">
+        <feature>commons-cli</feature>
+        <feature>commons-io</feature>
+        <feature>commons-lang</feature>
+        <feature>guava</feature>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.4</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.2</bundle>
+        <bundle>wrap:mvn:com.toastcoders/yavijava/6.0.03</bundle>
+        <bundle>wrap:mvn:org.sblim.slp/sblimSLPClient/1.17</bundle>
+        <bundle>wrap:mvn:org.sblim.wbem/sblimCIMClient/1.17</bundle>
+        <bundle>mvn:org.opennms/opennms-vmware/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-poller-monitors-core" version="27.2.0" description="OpenNMS :: Poller :: Monitors :: Core">
+        <feature>camel-core</feature>
+        <feature>camel-http</feature>
+        <feature>commons-io</feature>
+        <feature>commons-jexl</feature>
+        <feature>commons-lang</feature>
+        <feature>commons-net</feature>
+        <feature>dnsjava</feature>
+        <feature>hibernate36</feature>
+        <feature>jldap</feature>
+        <feature>jolokia-client</feature>
+        <feature>json-simple</feature>
+        <feature>jcifs</feature>
+        <feature>bsf</feature>
+        <feature>opennms-core-web</feature>
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <feature>opennms-dhcpd</feature>
+        <feature>opennms-icmp-api</feature>
+        <feature>opennms-poller-api</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-config</feature>
+        <feature>opennms-javamail</feature>
+        <bundle>mvn:org.opennms.core.jmx/org.opennms.core.jmx.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.jmx/org.opennms.core.jmx.impl/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.poller.monitors/org.opennms.features.poller.monitors.core/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-poller-shell" version="27.2.0" description="OpenNMS :: Poller :: Shell">
+        <bundle>mvn:org.opennms.features.poller/org.opennms.features.poller.shell/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-situation-feedback-api" version="27.2.0" description="OpenNMS :: Features :: Situation-Feedback :: API">
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.10.5</bundle>
+        <bundle>mvn:org.opennms.features.situation-feedback/org.opennms.features.situation-feedback.api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-situation-feedback" version="27.2.0" description="OpenNMS :: Features :: Situation-Feedback">
+        <feature>opennms-osgi-core-rest</feature>
+        <feature>opennms-jest</feature>
+        <feature>opennms-situation-feedback-api</feature>
+        <bundle>mvn:org.opennms.features.situation-feedback/org.opennms.features.situation-feedback.elastic/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.situation-feedback.rest/org.opennms.features.situation-feedback.rest.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.situation-feedback.rest/org.opennms.features.situation-feedback.rest.impl/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-alarm-history-api" description="OpenNMS :: Features :: Alarms :: History :: API" version="27.2.0">
+        <bundle>mvn:org.opennms.features.alarms.history/org.opennms.features.alarms.history.api/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-alarm-history-rest" description="OpenNMS :: Features :: Alarms :: History :: REST" version="27.2.0">
+        <feature>opennms-osgi-core-rest</feature>
+        <feature>opennms-alarm-history-api</feature>
+        <bundle>mvn:org.opennms.features.alarms.history.rest/org.opennms.features.alarms.history.rest.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.alarms.history.rest/org.opennms.features.alarms.history.rest.impl/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-alarm-history-elastic" description="OpenNMS :: Features :: Alarms :: History :: Elasticsearch" version="27.2.0">
+        <feature>opennms-alarm-history-rest</feature>
+        <feature>opennms-jest</feature>
+        <bundle dependency="true">mvn:org.mapstruct/mapstruct/1.3.0.Final</bundle>
+        <bundle>mvn:org.opennms.features.alarms.history/org.opennms.features.alarms.history.elastic/27.2.0</bundle>
+    </feature>
+
+    <feature name="kafka-streams" description="Kafka Streams" version="2.7.0">
+        <!-- Wrap the kafka-streams bundle instead of using the servicemix implementation since the later doesn't include the required imports for rocksdb -->
+        <bundle dependency="true">wrap:mvn:org.apache.kafka/kafka-streams/2.7.0$Bundle-Version=2.7.0&amp;Export-Package=*;-noimport:=true:version="2.7.0"</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.kafka-clients/2.7.0_1</bundle>
+        <bundle dependency="true">mvn:com.github.luben/zstd-jni/1.4.5-6</bundle>
+        <bundle dependency="true">wrap:mvn:org.apache.kafka/connect-json/2.7.0</bundle>
+        <bundle dependency="true">wrap:mvn:org.apache.kafka/connect-api/2.7.0</bundle>
+        <bundle dependency="true">mvn:org.lz4/lz4-java/1.7.1</bundle>
+        <bundle dependency="true">mvn:org.xerial.snappy/snappy-java/1.1.7.7</bundle>
+        <bundle dependency="true">mvn:com.typesafe.scala-logging/scala-logging_2.12/3.9.2</bundle>
+        <!-- These are only needed for  servicemix implementation of kafka streams -->
+        <!--
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.10.5</bundle>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.10.5</bundle>
+        -->
+        <bundle dependency="true">wrap:mvn:org.rocksdb/rocksdbjni/5.18.4</bundle>
+    </feature>
+    <feature name="opennms-kafka-producer" version="27.2.0" description="OpenNMS :: Kafka :: Producer">
+        <feature version="18.0">guava</feature>
+        <feature version="2.7.0">kafka-streams</feature>
+        <feature>rate-limited-logger</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-situation-feedback-api</feature>
+        <bundle>mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.common/org.opennms.core.ipc.common.kafka/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.kafka/org.opennms.features.kafka.producer/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-telemetry-collection" version="27.2.0" description="OpenNMS :: Telemetry :: Collection">
+        <feature>guava</feature>
+        <feature version="4.1.48.Final">netty4</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>opennms-collection-api</feature>
+        <feature>opennms-thresholding-api</feature>
+        <feature>opennms-osgi-jsr223</feature>
+        <bundle>mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.lib/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.config/org.opennms.features.telemetry.config.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.listeners/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols/org.opennms.features.telemetry.protocols.adapters/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-telemetry-daemon" version="27.2.0" description="OpenNMS :: Telemetry :: Daemon">
+        <feature version="4.1.48.Final">netty4</feature>
+        <feature>camel-spring</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>opennms-core-daemon</feature>
+        <feature>opennms-core-ipc-sink-api</feature>
+        <feature>opennms-dao-api</feature>
+        <feature>opennms-dao</feature>
+        <feature>opennms-telemetry-collection</feature>
+        <bundle dependency="true">mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.registry/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.daemon/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols/org.opennms.features.telemetry.protocols.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.config/org.opennms.features.telemetry.config.jaxb/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.listeners/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-telemetry-bmp" version="27.2.0" description="OpenNMS :: Telemetry :: BMP">
+        <feature>opennms-telemetry-bmp-adapter</feature>
+        <feature>rate-limited-logger</feature>
+        <feature>resilience4j</feature>
+        <feature>opennms-dnsresolver-api</feature>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.bmp/org.opennms.features.telemetry.protocols.bmp.parser/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-telemetry-bmp-adapter" version="27.2.0" description="OpenNMS :: Telemetry :: BMP :: Adapter">
+        <feature>opennms-telemetry-collection</feature>
+        <feature>opennms-kafka</feature>
+        <feature>rate-limited-logger</feature>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.utils/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.bmp/org.opennms.features.telemetry.protocols.bmp.adapter/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.bmp/org.opennms.features.telemetry.protocols.bmp.transport/27.2.0</bundle>
+    </feature>
+    <!-- Currently, this only runs on OpenNMS -->
+    <feature name="opennms-telemetry-bmp-stats" version="27.2.0" description="OpenNMS :: Telemetry :: BMP :: Stats Aggregator">
+        <bundle>mvn:org.opennms.features.telemetry.protocols.bmp/org.opennms.features.telemetry.protocols.bmp.stats/27.2.0</bundle>
+        <bundle>mvn:com.google.code.gson/gson/2.8.5</bundle>
+        <feature>commons-net</feature>
+    </feature>
+    <feature name="opennms-telemetry-jti" version="27.2.0" description="OpenNMS :: Telemetry :: JTI">
+        <feature>opennms-telemetry-collection</feature>
+        <bundle>mvn:com.google.protobuf/protobuf-java/2.6.1</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.jti/org.opennms.features.telemetry.protocols.jti.adapter/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-telemetry-nxos" version="27.2.0" description="OpenNMS :: Telemetry :: NX-OS">
+        <feature>opennms-telemetry-collection</feature>
+	<bundle>mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.nxos/org.opennms.features.telemetry.protocols.nxos.adapter/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-telemetry-graphite" version="27.2.0" description="OpenNMS :: Telemetry :: Graphite">
+        <feature>opennms-telemetry-collection</feature>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.graphite/org.opennms.features.telemetry.protocols.graphite.adapter/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-telemetry-openconfig"  description="OpenNMS :: Telemetry :: OpenConfig" version="27.2.0">
+        <feature>opennms-telemetry-collection</feature>
+        <feature>opennms-telemetry-openconfig-client</feature>
+        <bundle>mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+        <bundle>mvn:org.opennms.core.grpc/org.opennms.core.grpc.osgi/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.rpc/org.opennms.core.ipc.rpc.utils/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.openconfig/org.opennms.features.openconfig.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.openconfig/org.opennms.features.openconfig.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.openconfig/org.opennms.features.telemetry.protocols.openconfig.adapter/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.openconfig/org.opennms.features.telemetry.protocols.openconfig.connector/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-telemetry-openconfig-client" description="OpenNMS :: Telemetry :: OpenConfig :: Client" version="27.2.0">
+        <bundle>mvn:org.opennms.core.grpc/org.opennms.core.grpc.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.grpc/org.opennms.core.grpc.osgi/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.openconfig/org.opennms.features.openconfig.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.openconfig/org.opennms.features.openconfig.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.openconfig/org.opennms.features.openconfig.telemetry-client/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-karaf-health" description="OpenNMS :: Karaf Health">
+        <bundle start-level="100">mvn:org.opennms.features/org.opennms.features.karaf-health/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-health" version="27.2.0" description="OpenNMS :: Health">
+        <feature>dropwizard-metrics</feature>
+        <bundle>mvn:org.opennms.core.health/org.opennms.core.health.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.health/org.opennms.core.health.impl/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.health/org.opennms.core.health.shell/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-health-rest" version="27.2.0" description="OpenNMS :: Health :: Rest">
+        <feature>opennms-health</feature>
+        <bundle>mvn:org.opennms.core.health/org.opennms.core.health.rest/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-persistence" version="27.2.0" description="OpenNMS :: Persistence">
+        <feature>opennms-model</feature>
+        <feature>opennms-dao</feature>
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.datasource/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-spring-extender" version="27.2.0" description="OpenNMS :: Spring Extender">
+        <feature version="[4.2,4.3)">spring</feature>
+        <feature version="[4.2,4.3)">spring-jdbc</feature>
+        <feature version="[4.2,4.3)">spring-orm</feature>
+        <feature version="[4.2,4.3)">spring-jms</feature>
+        <feature version="[4.2,4.3)">spring-tx</feature>
+        <bundle dependency="true">mvn:com.google.guava/guava/18.0</bundle>
+        <bundle dependency="true">mvn:org.opennms.core/org.opennms.core.soa/27.2.0</bundle>
+        <bundle dependency="true">mvn:org.opennms.core/org.opennms.core.sysprops/27.2.0</bundle>
+        <bundle>mvn:org.opennms.container/spring-extender/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.serviceregistry/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-flows" version="27.2.0" description="OpenNMS :: Features :: Flows :: Feature Definition">
+        <details>Feature definition to start all required bundles related to *flow-support.</details>
+        <feature>opennms-health</feature>
+        <feature>opennms-jest</feature>
+        <feature version="4.1.48.Final">netty4</feature>
+        <feature>quartz</feature>
+        <feature>opennms-core-tracing</feature>
+        <feature>opennms-distributed-core-api</feature>
+        <feature>opennms-telemetry-collection</feature>
+        <feature>opennms-dnsresolver-api</feature>
+        <feature>opennms-kafka</feature>
+        <feature>rate-limited-logger</feature>
+        <bundle>wrap:mvn:org.apache.commons/commons-csv/1.5</bundle>
+        <bundle>mvn:org.apache.commons/commons-csv/1.5</bundle>
+        <bundle>mvn:org.mongodb/bson/3.5.0</bundle>
+        <bundle>mvn:org.opennms.features.flows/org.opennms.features.flows.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.flows.classification.engine/org.opennms.features.flows.classification.engine.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.flows.rest/org.opennms.features.flows.rest.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms/opennms-web-api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.flows.rest/org.opennms.features.flows.rest.impl/27.2.0</bundle>
+        <bundle>wrap:mvn:org.freemarker/freemarker/2.3.23</bundle>
+        <bundle>mvn:org.opennms.features.flows.classification.engine/org.opennms.features.flows.classification.engine.impl/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.flows/org.opennms.features.flows.elastic/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.flows/org.opennms.features.flows.kafka-persistence/27.2.0</bundle>
+        <bundle>mvn:com.google.guava/guava/18.0</bundle>
+        <bundle>mvn:org.mongodb/bson/3.5.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.cache/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.listeners/27.2.0</bundle>
+        <bundle>mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols/org.opennms.features.telemetry.protocols.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols/org.opennms.features.telemetry.protocols.flows/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.netflow/org.opennms.features.telemetry.protocols.netflow.parser/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.netflow/org.opennms.features.telemetry.protocols.netflow.adapter/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.netflow/org.opennms.features.telemetry.protocols.netflow.transport/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.sflow/org.opennms.features.telemetry.protocols.sflow.parser/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.telemetry.protocols.sflow/org.opennms.features.telemetry.protocols.sflow.adapter/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.flows.classification/org.opennms.features.flows.classification.shell/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-api-layer" version="27.2.0" description="OpenNMS :: Features :: API Layer">
+        <feature>opennms-health</feature>
+        <feature>opennms-situation-feedback-api</feature>
+        <feature version="0.5.1">opennms-integration-api</feature>
+        <bundle dependency="true">mvn:org.mapstruct/mapstruct/1.3.0.Final</bundle>
+        <bundle>mvn:org.opennms.features/org.opennms.features.api-layer/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-enlinkd-shell" version="27.2.0" description="OpenNMS :: Features :: Enlinkd :: Shell">
+        <feature>opennms-dao</feature>
+        <bundle>mvn:org.opennms.features.enlinkd/org.opennms.features.enlinkd.shell/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.enlinkd/org.opennms.features.enlinkd.generator/27.2.0</bundle>
+    </feature>
+    <feature name="karaf-extender" version="27.2.0" description="Karaf Extender">
+        <bundle dependency="true">mvn:com.google.guava/guava/18.0</bundle>
+        <bundle>mvn:org.opennms.container/extender/27.2.0</bundle>
+    </feature>
+    <feature name="scv-api" version="27.2.0" description="Secure Credentials Vault">
+        <bundle>mvn:org.opennms.features.scv/org.opennms.features.scv.api/27.2.0</bundle>
+    </feature>
+    <feature name="scv-shell" version="27.2.0" description="Secure Credentials Vault Shell">
+        <feature>scv-api</feature>
+        <bundle>mvn:org.opennms.features.scv/org.opennms.features.scv.shell/27.2.0</bundle>
+    </feature>
+    <feature name="scv-jceks-impl" version="27.2.0" description="Secure Credentials Vault JCEKS Impl">
+        <feature>scv-api</feature>
+        <bundle dependency="true">mvn:commons-codec/commons-codec/1.10</bundle>
+        <bundle dependency="true">mvn:com.google.guava/guava/18.0</bundle>
+        <bundle>mvn:org.opennms.features.scv/org.opennms.features.scv.jceks-impl/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-osgi-core-rest" version="27.2.0" description="OpenNMS :: Features :: OSGI :: Core :: Rest">
+        <details>Core module which provides features to install to listen for rest related services,
+            such as @Path annotated interfaces.</details>
+        <feature>jax-rs-connector</feature>
+        <feature>jax-rs-provider-jackson</feature>
+        <bundle>mvn:org.opennms.features/org.opennms.features.rest-provider/27.2.0</bundle>
+        <bundle>mvn:org.opennms.container.bridge/org.opennms.container.bridge.rest/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-jaas-login-module" version="27.2.0" description="OpenNMS :: OSGi Container :: Karaf JAAS Login Module">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <bundle>mvn:org.opennms.container/org.opennms.container.jaas-login-module/27.2.0</bundle>
+        <bundle>mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.modules/4.2.6</bundle>
+        <bundle>mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.config/4.2.6</bundle>
+    </feature>
+    <feature name="jmxconfiggenerator" version="27.2.0" description="OpenNMS JMX Configuration Generator">
+        <feature>guava</feature>
+        <feature>commons-io</feature>
+        <bundle>mvn:org.opennms.features/jmxconfiggenerator/27.2.0</bundle>
+        <bundle>wrap:mvn:args4j/args4j/2.32</bundle>
+        <bundle>wrap:mvn:org.jvnet.opendmk/jmxremote_optional/1.0_01-ea</bundle>
+        <bundle>mvn:org.apache.velocity/velocity/1.7</bundle>
+        <bundle>mvn:org.opennms.features/org.opennms.features.name-cutter/27.2.0</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.6_1</bundle>
+    </feature>
+    <feature name="vaadin-jmxconfiggenerator" version="27.2.0" description="OpenNMS :: Features :: JMX Config Generator :: Web UI">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>vaadin</feature>
+        <feature>jmxconfiggenerator</feature>
+        <bundle>mvn:org.opennms.features/vaadin-jmxconfiggenerator/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/widgetset/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.themes/jmxconfiggenerator-theme/27.2.0</bundle>
+    </feature>
+    <feature name="org.opennms.features.enlinkd.service.api" version="27.2.0" description="OpenNMS :: Features :: Enlinkd :: Service :: API">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.enlinkd/org.opennms.features.enlinkd.persistence.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.enlinkd/org.opennms.features.enlinkd.service.api/27.2.0</bundle>
+        <bundle>wrap:mvn:net.sf.jung/jung-api/2.0.1</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.criteria/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.enlinkd/org.opennms.features.enlinkd.persistence.api/27.2.0</bundle>
+        <bundle>mvn:com.google.guava/guava/18.0</bundle>
+    </feature>
+    <feature name="org.opennms.features.bsm.service.api" version="27.2.0" description="OpenNMS :: Features :: BSM :: Service :: API">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.bsm/org.opennms.features.bsm.persistence.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.bsm/org.opennms.features.bsm.service.api/27.2.0</bundle>
+        <bundle>wrap:mvn:net.sf.jung/jung-api/2.0.1</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.criteria/27.2.0</bundle>
+        <bundle>mvn:com.google.guava/guava/18.0</bundle>
+    </feature>
+    <feature name="org.opennms.features.bsm.shell-commands" version="27.2.0" description="OpenNMS :: Features :: BSM :: Shell Commands">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <bundle>mvn:org.opennms.features.bsm/org.opennms.features.bsm.shell-commands/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.bsm/org.opennms.features.bsm.service.api/27.2.0</bundle>
+        <bundle>mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.2.6</bundle>
+    </feature>
+    <feature name="vaadin-adminpage" version="27.2.0" description="OpenNMS :: Features :: BSM :: Vaadin Adminpage">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>vaadin</feature>
+        <feature>org.opennms.features.bsm.service.api</feature>
+        <bundle>mvn:org.opennms.features.bsm/vaadin-adminpage/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/widgetset/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.link/27.2.0</bundle>
+    </feature>
+    <feature name="geolocation" version="27.2.0" description="OpenNMS :: Features :: Geolocation :: Feature">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>opennms-core-web</feature>
+        <bundle>mvn:com.google.guava/guava/18.0</bundle>
+        <bundle start-level="80">mvn:org.opennms.features.geocoder/org.opennms.features.geocoder.api/27.2.0</bundle>
+        <bundle start-level="80">mvn:org.opennms.features.geocoder/org.opennms.features.geocoder.rest/27.2.0</bundle>
+        <bundle start-level="80">mvn:org.opennms.features.geocoder/org.opennms.features.geocoder.service/27.2.0</bundle>
+        <bundle start-level="90">mvn:org.opennms.features.geolocation/org.opennms.features.geolocation.api/27.2.0</bundle>
+        <bundle start-level="90">mvn:org.opennms.features.geolocation/org.opennms.features.geolocation.services/27.2.0</bundle>
+        <bundle start-level="100">mvn:org.opennms.features.geocoder/org.opennms.features.geocoder.google/27.2.0</bundle>
+        <bundle start-level="100">mvn:org.opennms.features.geocoder/org.opennms.features.geocoder.mapquest/27.2.0</bundle>
+        <bundle start-level="100">mvn:org.opennms.features.geocoder/org.opennms.features.geocoder.nominatim/27.2.0</bundle>
+    </feature>
+    <feature name="vaadin-snmp-events-and-metrics" version="27.2.0" description="OpenNMS :: Features :: SNMP Events and Metrics Admin UI">
+        <details>OpenNMS Vaadin Administration UI for handling SNMP related configuration files for events and data collection.</details>
+        <feature>opennms-core</feature>
+        <feature>vaadin</feature>
+        <bundle>mvn:org.opennms.features/vaadin-snmp-events-and-metrics/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/widgetset/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.themes/onms-default-theme/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features/org.opennms.features.mib-compiler/27.2.0</bundle>
+        <bundle>mvn:commons-lang/commons-lang/2.6</bundle>
+    </feature>
+    <feature name="vaadin-node-maps" version="27.2.0" description="OpenNMS :: Features :: Node Maps">
+        <details>OpenNMS Vaadin UI for displaying nodes on geographical maps using assets records.</details>
+        <feature>opennms-core-web</feature>
+        <feature>vaadin</feature>
+        <feature>geolocation</feature>
+        <bundle>mvn:org.opennms.features/vaadin-node-maps/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/header/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology.plugins/org.opennms.features.topology.plugins.browsers/27.2.0</bundle>
+    </feature>
+    <feature name="osgi-nrtg-api" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: API">
+        <details>The API contains the models for the NRTG OSGI projects. It has models for collection jobs, measurements and protocol collectors.</details>
+        <bundle>mvn:org.opennms.features.nrtg/nrtg-api/27.2.0</bundle>
+    </feature>
+    <feature name="osgi-nrtg-protocolcollector-snmp" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: Collectors :: SNMP">
+        <details>Plugin for the NRTCollector OSGI Satellit to collect data from snmp agents</details>
+        <feature>osgi-nrtg-api</feature>
+        <bundle>mvn:org.opennms.features.nrtg.protocolcollector/nrtg-protocolcollector-snmp/27.2.0</bundle>
+    </feature>
+    <feature name="osgi-nrtg-protocolcollector-tca" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: Collectors :: TCA">
+        <details>Plugin for the NRTCollector OSGI Satellite to collect data from TCA agents.</details>
+        <feature>osgi-nrtg-api</feature>
+        <bundle>mvn:org.opennms.features.nrtg.protocolcollector/nrtg-protocolcollector-tca/27.2.0</bundle>
+    </feature>
+    <feature name="osgi-nrtg-web" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: Web">
+        <details>NRTG Web Runtime Feature</details>
+        <feature>osgi-nrtg-api</feature>
+        <bundle>mvn:org.opennms.features.nrtg/nrtg-web/27.2.0</bundle>
+    </feature>
+    <feature name="osgi-nrtg-base" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: Base">
+        <details>OSGI Runtime for the NRTCollector.</details>
+        <feature>osgi-nrtg-protocolcollector-snmp</feature>
+        <feature>osgi-nrtg-protocolcollector-tca</feature>
+        <feature>osgi-nrtg-web</feature>
+    </feature>
+    <feature name="osgi-nrtg-jms" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: JMS">
+        <details>OSGI Runtime for the NRTCollector.</details>
+        <feature>osgi-nrtg-base</feature>
+        <feature>activemq</feature>
+        <feature>activemq-blueprint</feature>
+        <feature version="4.2.9.RELEASE_1">spring-jms</feature>
+        <bundle>mvn:org.opennms.features.nrtg/nrtg-collector/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.nrtg/nrtg-nrtbroker-jms/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.nrtg/nrtg-broker/27.2.0</bundle>
+    </feature>
+    <feature name="osgi-nrtg-local" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: Local">
+        <details>OSGI Runtime for the NRTCollector.</details>
+        <feature>osgi-nrtg-base</feature>
+        <bundle>mvn:org.opennms.features.nrtg/nrtg-nrtbroker-local/27.2.0</bundle>
+    </feature>
+    <feature name="nrtg" version="27.2.0" description="OpenNMS :: Features :: NRTG :: Features :: All">
+        <details>OSGI Runtime for the NRTCollector.</details>
+        <feature>osgi-nrtg-jms</feature>
+        <feature>osgi-nrtg-local</feature>
+    </feature>
+    <feature name="vaadin" version="27.2.0" description="OpenNMS :: Features :: Vaadin + Dependencies">
+        <details>The Vaadin web application framework including some addons and osgi related packages.</details>
+        <!-- Dependencies -->
+        <feature>http-whiteboard</feature>
+        <bundle>wrap:mvn:com.google.gwt/gwt-elemental/2.8.2</bundle>
+        <bundle>wrap:mvn:com.google.gwt/gwt-user/2.8.2/$Export-Package=com.google.*</bundle>
+        <bundle>mvn:com.vaadin.external/gentyref/1.2.0.vaadin1</bundle>
+        <bundle>mvn:org.jsoup/jsoup/1.11.2</bundle>
+        <bundle>mvn:com.google.guava/guava/18.0</bundle>
+        <bundle>mvn:org.json/json/20171018</bundle>
+        <!-- Vaadin -->
+        <bundle start-level="70">mvn:com.vaadin/vaadin-shared/8.12.4</bundle>
+        <bundle>mvn:com.vaadin/vaadin-server/8.12.4</bundle>
+        <bundle>mvn:com.vaadin/vaadin-client/8.12.4</bundle>
+        <bundle>mvn:com.vaadin/vaadin-client-compiled/8.12.4</bundle>
+        <bundle>mvn:com.vaadin/vaadin-themes/8.12.4</bundle>
+        <!-- Vaadin Compatibility -->
+        <bundle>mvn:com.vaadin/vaadin-compatibility-shared/8.12.4</bundle>
+        <bundle>mvn:com.vaadin/vaadin-compatibility-server/8.12.4</bundle>
+        <bundle>mvn:com.vaadin/vaadin-compatibility-client-compiled/8.12.4</bundle>
+        <bundle>wrap:mvn:com.vaadin/vaadin-compatibility-client/8.12.4</bundle>
+        <bundle>mvn:com.vaadin/vaadin-compatibility-themes/8.12.4</bundle>
+        <!-- Add Ons -->
+        <bundle>mvn:com.vaadin/vaadin-context-menu/3.1.0</bundle>
+        <bundle>mvn:org.vaadin.addon/confirmdialog/3.2.0</bundle>
+        <!-- OpenNMS Vaadin -->
+        <bundle>mvn:org.opennms.features.vaadin-components/extender-service/27.2.0</bundle>
+        <bundle>mvn:org.opennms.osgi/opennms-osgi-core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.themes/onms-default-theme/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-api" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: API">
+        <details>APIs for creating topology OSGi plugins.</details>
+        <feature>vaadin</feature>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.api/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-base" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: Base">
+        <details>Base runtime and plugins for the OpenNMS topology web app.</details>
+        <feature>opennms-core</feature>
+        <feature>opennms-topology-api</feature>
+        <feature>geolocation</feature>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.app/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/org.opennms.features.topology.plugins.topo.history/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.link/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology.plugins/org.opennms.features.topology.plugins.layout/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.netutils/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology.themes/org.opennms.features.topology.themes.default-theme/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/graph/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/header/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-linkd" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: Linkd">
+        <details>Linkd-based runtime and plugins for the OpenNMS topology web app.</details>
+        <feature>opennms-topology-runtime-base</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/org.opennms.features.topology.plugins.topo.linkd/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-browsers" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: Browsers">
+        <details>Alarm browser to enhance the Linkd topology UI.</details>
+        <feature>opennms-topology-api</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins/org.opennms.features.topology.plugins.browsers/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-vmware" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: VMware">
+        <details>Runtime and plugins for the OpenNMS VMware topology web app.</details>
+        <feature>opennms-topology-runtime-base</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/org.opennms.features.topology.plugins.topo.vmware/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-application" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: Application">
+        <details>Runtime and plugins for the OpenNMS Application Topology Provider</details>
+        <feature>opennms-topology-runtime-base</feature>
+        <feature>opennms-graph-provider-application</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/org.opennms.features.topology.plugins.topo.application/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-bsm" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: BSM">
+        <details>Generated using Pax-Construct</details>
+        <feature>opennms-topology-runtime-base</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/org.opennms.features.topology.plugins.topo.bsm/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-pathoutage" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: PathOutage">
+        <details>Generated using Pax-Construct</details>
+        <feature>opennms-topology-runtime-base</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/org.opennms.features.topology.plugins.topo.pathoutage/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-graphml" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: GraphML">
+        <details>GraphML runtime and plugins for the OpenNMS topology web app.</details>
+        <feature>opennms-graphml</feature>
+        <feature>opennms-topology-runtime-base</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/graphml/27.2.0</bundle>
+        <bundle>mvn:org.codehaus.groovy/groovy-all/2.4.5</bundle>
+        <bundle>mvn:org.opennms.features/org.opennms.features.osgi-jsr223/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-topology-runtime-asset" version="27.2.0" description="OpenNMS :: Features :: Topology :: Features :: Runtime :: Asset">
+        <details>Asset runtime and plugins for the OpenNMS topology web app.</details>
+        <feature>opennms-topology-runtime-graphml</feature>
+        <feature>opennms-topology-runtime-base</feature>
+        <bundle>mvn:org.opennms.features.topology.plugins.topo/asset/27.2.0</bundle>
+    </feature>
+    <feature name="org.opennms.features.topology.shell" version="27.2.0" description="OpenNMS :: Features :: Topology :: Shell Commands">
+        <details>Generated using Pax-Construct</details>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.shell/27.2.0</bundle>
+    </feature>
+    <feature name="vaadin-dashboard" version="27.2.0" description="OpenNMS :: Features :: Dashboard">
+        <details>OpenNMS Vaadin Dashboard</details>
+        <feature>opennms-core</feature>
+        <feature>vaadin</feature>
+        <bundle>mvn:org.opennms.features/vaadin-dashboard/27.2.0</bundle>
+        <bundle>wrap:mvn:org.vaadin.addons/dragdroplayouts/1.4.2</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.themes/dashboard-theme/27.2.0</bundle>
+        <bundle>mvn:org.vaadin.addons/dragdroplayouts/1.4.2</bundle>
+    </feature>
+    <feature name="dashlet-alarms" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Alarms">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-alarms/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-bsm" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: BSM">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-bsm/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-summary" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Summary">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-summary/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-map" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Map">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-map/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-image" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Image">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-image/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-charts" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Charts">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-charts/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-rtc" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: RTC">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-rtc/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-rrd" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: RRD">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-rrd/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-ksc" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: KSC">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-ksc/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-topology" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Topology">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-topology/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.link/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-surveillance" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Surveillance">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-surveillance/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-url" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: URL">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-url/27.2.0</bundle>
+    </feature>
+    <feature name="dashlet-grafana" version="27.2.0" description="OpenNMS :: Features :: Dashlets :: Grafana">
+        <feature>opennms-core</feature>
+        <bundle>mvn:org.opennms.features.vaadin-dashlets/dashlet-grafana/27.2.0</bundle>
+    </feature>
+    <feature name="vaadin-surveillance-views" version="27.2.0" description="OpenNMS :: Features :: Surveillance Views">
+        <details>OpenNMS Vaadin Surveillance Views</details>
+        <feature>opennms-core</feature>
+        <feature>vaadin</feature>
+        <bundle>mvn:org.opennms.features/vaadin-surveillance-views/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/graph/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/core/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.vaadin-components/widgetset/27.2.0</bundle>
+    </feature>
+    <feature name="jira-troubleticketer" version="27.2.0" description="OpenNMS :: Features :: Ticketing :: JIRA">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <bundle>mvn:org.opennms.features/jira-troubleticketer/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.ticketing/org.opennms.features.ticketing.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.lib/27.2.0</bundle>
+        <bundle>mvn:joda-time/joda-time/2.1</bundle>
+        <bundle>mvn:org.opennms.features/jira-client/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-inmemory-ticketer" version="27.2.0" description="OpenNMS :: Features :: Ticketing :: InMemory">
+        <bundle>mvn:org.opennms.features.ticketing/org.opennms.features.ticketing.inmemory/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.ticketing/org.opennms.features.ticketing.api/27.2.0</bundle>
+    </feature>
+    <feature name="datachoices" version="27.2.0" description="OpenNMS :: Features :: Data Choices">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>guava</feature>
+        <feature>hibernate36</feature>
+        <feature>javax.servlet</feature>
+        <feature>quartz</feature>
+        <bundle>mvn:org.opennms.features/datachoices/27.2.0</bundle>
+        <bundle>wrap:mvn:org.freemarker/freemarker/2.3.23</bundle>
+        <bundle>mvn:org.apache.karaf.shell/org.apache.karaf.shell.console/4.2.6</bundle>
+        <bundle>mvn:org.apache.karaf.shell/org.apache.karaf.shell.core/4.2.6</bundle>
+        <bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.13</bundle>
+        <bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.13</bundle>
+        <bundle>mvn:org.opennms/opennms-web-api/27.2.0</bundle>
+        <bundle>mvn:org.freemarker/freemarker/2.3.23</bundle>
+    </feature>
+    <feature name="opennms-es-rest" version="27.2.0" description="OpenNMS :: Features :: ElasticSearch Rest">
+        <details>OpenNMS :: Features :: ElasticSearch Rest</details>
+        <feature>opennms-jest</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>rate-limited-logger</feature>
+        <bundle>mvn:org.opennms.core.ipc.sink/org.opennms.core.ipc.sink.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.sink/org.opennms.core.ipc.sink.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.sink/org.opennms.core.ipc.sink.xml/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features/org.opennms.features.opennms-es-rest/27.2.0</bundle>
+        <bundle>mvn:com.googlecode.json-simple/json-simple/1.1.1</bundle>
+        <bundle>mvn:org.opennms.core/org.opennms.core.cache/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-jest" version="27.2.0" description="OpenNMS :: Features :: Jest :: Feature definition">
+        <details>Feature definition for Jest (ElasticSearch Java ReST Client)</details>
+        <bundle>mvn:com.google.code.gson/gson/2.8.5</bundle>
+        <bundle>wrap:mvn:org.apache.httpcomponents/httpcore-nio/4.4.6</bundle>
+        <bundle>mvn:org.opennms.features.jest/org.opennms.features.jest.client/27.2.0</bundle>
+        <bundle>mvn:io.searchbox/jest-complete-osgi/5.3.3</bundle>
+        <bundle>mvn:com.google.guava/guava/21.0</bundle>
+        <bundle>mvn:commons-codec/commons-codec/1.9</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.6</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.3</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpasyncclient-osgi/4.1.3</bundle>
+    </feature>
+    <feature name="opennms-search" version="27.2.0" description="OpenNMS :: Features :: Search">
+        <details>OpenNMS :: Features :: Search</details>
+        <bundle>mvn:org.opennms.features.search/org.opennms.features.search.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.search/org.opennms.features.search.providers/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.search/org.opennms.features.search.service/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.search/org.opennms.features.search.rest/27.2.0</bundle>
+    </feature>
+    <feature name="ifttt-integration" version="27.2.0" description="OpenNMS :: Features :: IFTTT Integration">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>opennms-dao-api</feature>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features/org.opennms.features.ifttt/27.2.0</bundle>
+    </feature>
+    <feature name="org.opennms.features.topologies.service.api" version="27.2.0" description="OpenNMS :: Features :: Topologies :: Service :: API">
+        <details>OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.</details>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.topologies/org.opennms.features.topologies.service.api/27.2.0</bundle>
+        <bundle>wrap:mvn:net.sf.jung/jung-api/2.0.1</bundle>
+        <bundle>mvn:org.opennms/opennms-model/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-endpoints-grafana" version="27.2.0" description="OpenNMS :: Features :: Endpoints :: Grafana">
+        <bundle>mvn:org.opennms.features.endpoints.grafana/org.opennms.features.endpoints.grafana.client/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.endpoints.grafana/org.opennms.features.endpoints.grafana.service/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.endpoints.grafana/org.opennms.features.endpoints.grafana.rest/27.2.0</bundle>
+        <!-- These are pulled in via lib directory -->
+        <!--<bundle>mvn:org.opennms.features.endpoints.grafana/org.opennms.features.endpoints.grafana.api/27.2.0</bundle>-->
+        <!--<bundle>mvn:org.opennms.features.endpoints.grafana.persistence/org.opennms.features.endpoints.grafana.persistence.api/27.2.0</bundle>-->
+        <!--<bundle>mvn:org.opennms.features.endpoints.grafana.persistence/org.opennms.features.endpoints.grafana.persistence.impl/27.2.0</bundle>-->
+    </feature>
+    <feature name="opennms-reporting" version="27.2.0" description="OpenNMS :: Features :: Reporting">
+        <!-- All other dependencies are wired in through custom.properties -->
+        <bundle>mvn:org.opennms.features.reporting/org.opennms.features.reporting.rest/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-dnsresolver-api" version="27.2.0" description="OpenNMS :: Features :: DNS Resolver :: API">
+        <bundle>mvn:org.opennms.features.dnsresolver/org.opennms.features.dnsresolver.api/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-dnsresolver-shell" version="27.2.0" description="OpenNMS :: Features :: DNS Resolver :: Shell">
+        <feature version="27.2.0">opennms-dnsresolver-api</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.dnsresolver/org.opennms.features.dnsresolver.shell/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-dnsresolver-netty" version="27.2.0" description="OpenNMS :: Features :: DNS Resolver :: Netty">
+        <feature version="27.2.0">opennms-dnsresolver-api</feature>
+        <feature>guava</feature>
+        <feature>dropwizard-metrics</feature>
+        <feature>dnsjava</feature>
+        <feature version="4.1.48.Final">netty4</feature>
+        <feature>resilience4j</feature>
+        <feature>opennms-events-api</feature>
+        <feature>opennms-model</feature>
+
+        <bundle dependency="true">mvn:org.opennms.core.health/org.opennms.core.health.api/27.2.0</bundle>
+        <bundle dependency="true">mvn:com.github.ben-manes.caffeine/caffeine/2.8.0</bundle>
+        <bundle>mvn:org.opennms.features.dnsresolver/org.opennms.features.dnsresolver.netty/27.2.0</bundle>
+    </feature>
+
+    <feature name="resilience4j" version="0.17.0" description="resilience4j">
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jsr305/3.0.2_1</bundle>
+        <bundle>mvn:io.vavr/vavr/0.10.0</bundle>
+        <bundle>mvn:io.vavr/vavr-match/0.10.0</bundle>
+        <bundle>mvn:io.github.resilience4j/resilience4j-core/0.17.0</bundle>
+        <bundle>mvn:io.github.resilience4j/resilience4j-circuitbreaker/0.17.0</bundle>
+        <bundle>mvn:io.github.resilience4j/resilience4j-bulkhead/0.17.0</bundle>
+        <bundle>mvn:io.github.resilience4j/resilience4j-retry/0.17.0</bundle>        
+    </feature>
+
+    <feature name="netty4" version="4.1.48.Final" description="Netty">
+        <bundle>mvn:io.netty/netty-resolver/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-common/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-buffer/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-transport/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-handler/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-codec/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-codec-dns/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-resolver-dns/4.1.48.Final</bundle>
+        <!--
+        <bundle>mvn:io.netty/netty-transport-native-epoll/4.1.48.Final</bundle>
+        <bundle>mvn:io.netty/netty-transport-native-unix-common/4.1.48.Final</bundle>
+        -->
+    </feature>
+
+    <feature name="opennms-blobstore-shell" description="OpenNMS :: Features :: Distributed :: Key Value Store :: Blob :: Shell" version="27.2.0">
+        <feature>resilience4j</feature>
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.kv-store.blob.shell/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-blobstore-noop"
+             description="OpenNMS :: Features :: Distributed :: Key Value Store :: Blob :: No-Op" version="27.2.0">
+        <feature>opennms-blobstore-shell</feature>
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.kv-store.blob.no-op/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-blobstore-postgres"
+             description="OpenNMS :: Features :: Distributed :: Key Value Store :: Blob :: Postgres" version="27.2.0">
+        <feature>opennms-blobstore-shell</feature>
+        <bundle dependency="true">mvn:org.opennms.features.distributed/org.opennms.features.distributed.kv-store.postgres-shared/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.kv-store.blob.postgres/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-jsonstore-shell" description="OpenNMS :: Features :: Distributed :: Key Value Store :: JSON :: Shell" version="27.2.0">
+        <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.kv-store.json.shell/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-config-dao-api" description="OpenNMS :: Config DAO :: API" version="27.2.0">
+        <bundle>mvn:org.opennms/org.opennms.config-dao.common-api/27.2.0</bundle>
+        <bundle>mvn:org.opennms/org.opennms.config-dao.poll-outages.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms/org.opennms.config-dao.thresholding.api/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-threshold-states-shell" description="OpenNMS :: Features :: Collection :: Thresholding :: Shell" version="27.2.0">
+        <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.thresholding.shell/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-core-ipc-grpc-server" description="OpenNMS :: Core :: IPC :: GRPC :: Server" version="27.2.0">
+        <feature>opennms-core-ipc-sink-api</feature>
+        <feature>opennms-identity</feature>
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <bundle>mvn:org.opennms.core.grpc/org.opennms.core.grpc.osgi/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.grpc/org.opennms.core.ipc.grpc.common/27.2.0</bundle>
+        <bundle>mvn:org.opennms.core.ipc.grpc/org.opennms.core.ipc.grpc.server/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-graphml" description="OpenNMS :: Features :: GraphML :: API + Service + ReST" version="27.2.0">
+        <feature>guava</feature>
+        <bundle>mvn:org.opennms.features.graphml/org.opennms.features.graphml.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.graphml/org.opennms.features.graphml.service/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.graphml/org.opennms.features.graphml.rest/27.2.0</bundle>
+        <!-- Provided by ${OPENNMS_HOME}/lib -->
+        <!-- <bundle>mvn:org.opennms.core/org.opennms.core.xml/27.2.0</bundle> -->
+    </feature>
+
+    <!-- Convenient feature to install all graph related features-->
+    <feature name="opennms-graphs" description="OpenNMS :: Features :: Graph" version="27.2.0">
+        <feature>opennms-graph-api</feature>
+        <feature>opennms-graph-service</feature>
+        <feature>opennms-graph-domain</feature>
+        <feature>opennms-graph-persistence</feature>
+        <feature>opennms-graph-shell</feature>
+        <feature>opennms-graph-rest</feature>
+        <feature>opennms-graph-provider-graphml</feature>
+        <feature>opennms-graph-provider-bsm</feature>
+        <feature>opennms-graph-provider-application</feature>
+        <feature>opennms-graph-provider-legacy</feature>
+        <feature>opennms-graph-provider-topology</feature>
+    </feature>
+    <feature name="opennms-graph-api" description="OpenNMS :: Features :: Graph :: API" version="27.2.0">
+        <feature>guava</feature>
+        <feature>opennms-model</feature>
+        <bundle>mvn:org.opennms.features.graph/org.opennms.features.graph.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.graph/org.opennms.features.graph.jung/2.0.1</bundle>
+    </feature>
+    <feature name="opennms-graph-service" description="OpenNMS :: Features :: Graph :: Service" version="27.2.0">
+        <feature>opennms-graph-api</feature>
+        <feature>opennms-graph-domain</feature>
+        <bundle>wrap:mvn:com.google.code.gson/gson/2.8.5</bundle>
+        <bundle>mvn:com.github.ben-manes.caffeine/caffeine/2.8.0</bundle>
+        <bundle>mvn:org.opennms.features.graph/org.opennms.features.graph.service/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-graph-persistence" description="OpenNMS :: Features :: Graph :: Persistence" version="27.2.0">
+        <feature>opennms-graph-api</feature>
+        <!-- Provided by ${OPENNMS_HOME}/lib -->
+        <!-- <feature>opennms-dao-api</feature> -->
+        <!-- <feature>opennms-dao</feature> -->
+        <!-- <bundle>mvn:org.opennms.features.graph.dao/org.opennms.features.graph.dao.api/27.2.0</bundle> -->
+        <!-- <bundle>mvn:org.opennms.features.graph.dao/org.opennms.features.graph.dao.impl/27.2.0</bundle> -->
+    </feature>
+    <feature name="opennms-graph-rest" description="OpenNMS :: Features :: Graph :: ReST API" version="27.2.0">
+        <feature>opennms-graph-api</feature>
+        <feature>opennms-graph-service</feature>
+        <bundle>mvn:org.opennms/opennms-web-api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.graph.rest/org.opennms.features.graph.rest.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.graph.rest/org.opennms.features.graph.rest.impl/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-graph-domain" description="OpenNMS :: Features :: Graph :: Domain" version="27.2.0">
+        <feature>opennms-graph-api</feature>
+        <bundle>mvn:org.opennms.features.graph/org.opennms.features.graph.domain/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-graph-shell" description="OpenNMS :: Features :: Graph :: Shell" version="27.2.0">
+        <feature>opennms-graph-service</feature>
+        <bundle>mvn:org.opennms.features.graph/org.opennms.features.graph.shell/27.2.0</bundle>
+    </feature>
+    <!-- Graph Providers -->
+    <feature name="opennms-graph-provider-graphml" description="OpenNMS :: Features :: Graph :: Provider :: GraphML" version="27.2.0">
+        <feature>opennms-graph-service</feature>
+        <feature>opennms-core</feature>
+        <feature>opennms-graphml</feature>
+        <bundle>mvn:org.opennms.features.graph.provider/org.opennms.features.graph.provider.graphml/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-graph-provider-bsm" description="OpenNMS :: Features :: Graph :: Provider :: Business Services" version="27.2.0">
+        <feature>opennms-graph-service</feature>
+        <feature>opennms-model</feature>
+        <bundle>mvn:org.opennms.features.graph.provider/org.opennms.features.graph.provider.bsm/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-graph-provider-application" description="OpenNMS :: Features :: Graph :: Provider :: Application" version="27.2.0">
+        <feature>opennms-graph-service</feature>
+        <feature>opennms-model</feature>
+        <bundle>mvn:org.opennms.features.graph.provider/org.opennms.features.graph.provider.application/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-graph-provider-legacy" description="OpenNMS :: Features :: Graph :: Provider :: VMware + Enlinkd" version="27.2.0">
+        <feature>opennms-graph-service</feature>
+        <feature>opennms-model</feature>
+        <feature>opennms-topology-api</feature>
+        <bundle>mvn:org.opennms.features.graph.provider/org.opennms.features.graph.provider.legacy/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-graph-provider-topology" description="OpenNMS :: Features :: Graph :: Provider :: Topology" version="27.2.0">
+        <feature>opennms-model</feature>
+        <feature>opennms-graph-service</feature>
+        <bundle>mvn:org.opennms.features.topology/org.opennms.features.topology.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.graph.provider/org.opennms.features.graph.provider.topology/27.2.0</bundle>
+    </feature>
+    <!-- For now it is only used for test purposes -->
+    <feature name="opennms-graph-provider-persistence-test" description="OpenNMS :: Features :: Graph :: Provider :: Persistence Test" version="27.2.0">
+        <feature>opennms-model</feature>
+        <feature>opennms-graph-service</feature>
+        <feature>opennms-graph-domain</feature>
+        <bundle>mvn:org.opennms.features.graph.provider/org.opennms.features.graph.provider.persistence-test/27.2.0</bundle>
+    </feature>
+    <feature name="opennms-perspective-poller" description="OpenNMS :: Features :: Perspective Poller" version="27.2.0">
+        <bundle>mvn:org.opennms.features/org.opennms.features.perspectivepoller/27.2.0</bundle>
+    </feature>
+</features>

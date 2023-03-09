@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:07:32 IST 2023
+opennms-osgi-core-rest-27.2.0-sources.jar>=
+opennms-osgi-core-rest-27.2.0.pom>=
+opennms-osgi-core-rest-27.2.0.jar>=

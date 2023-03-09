@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features 
+  name="minion-27.2.0"
+  xmlns="http://karaf.apache.org/xmlns/features/v1.4.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0 http://karaf.apache.org/xmlns/features/v1.4.0"
+>
+    <!-- OpenNMS Features -->
+    <repository>mvn:org.opennms.karaf/opennms/27.2.0/xml/features</repository>
+
+    <feature name="minion-core-api" description="OpenNMS :: Distributed :: Core :: API" version="27.2.0">
+      <feature>opennms-distributed-core-api</feature>
+    </feature>
+
+    <feature name="opennms-dao-minion" description="OpenNMS :: DAO :: Minion" version="27.2.0">
+      <feature>minion-core-api</feature>
+      <feature>opennms-dao-api</feature>
+      <bundle>mvn:org.opennms.features.distributed/org.opennms.features.distributed.dao-distributed/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-trapd-listener" description="OpenNMS :: Trapd :: Listener" version="27.2.0">
+      <feature>minion-core-api</feature>
+      <feature>opennms-dao-minion</feature>
+      <feature>opennms-trapd</feature>
+      <feature>opennms-core-ipc-sink-api</feature>
+    </feature>
+
+    <feature name="minion-heartbeat-producer" description="OpenNMS :: Minion :: Heartbeat Producer" version="27.2.0">
+      <feature version="18.0">guava</feature>
+      <feature>minion-core-api</feature>
+      <feature>opennms-core</feature>
+      <feature>opennms-core-ipc-sink-api</feature>
+      <bundle>mvn:org.opennms.features.minion.heartbeat/org.opennms.features.minion.heartbeat.common/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.minion.heartbeat/org.opennms.features.minion.heartbeat.producer/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-snmp-proxy" description="OpenNMS :: Minion :: SNMP Proxy" version="27.2.0">
+      <feature>opennms-core-ipc-rpc-api</feature>
+      <feature>opennms-config-api</feature>
+      <feature>opennms-model</feature>
+      <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.api/27.2.0</bundle>
+      <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.proxy.rpc-impl/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-icmp-proxy" description="OpenNMS :: Minion :: ICMP Proxy" version="27.2.0">
+        <feature>opennms-core-ipc-rpc-api</feature>
+        <feature>opennms-model</feature>
+
+        <bundle>mvn:org.opennms/opennms-icmp-api/27.2.0</bundle>
+        <bundle>mvn:org.opennms/org.opennms.icmp.proxy.rpc-impl/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-provisiond-detectors" description="Minion :: Provisond :: Detectors" version="27.2.0">
+      <feature>opennms-config</feature>
+      <feature>opennms-dao-api</feature>
+      <feature>opennms-icmp-best</feature>
+      <feature>opennms-provisioning-detectors</feature>
+      <feature>opennms-core-ipc-rpc-api</feature>
+      <bundle>mvn:org.opennms/opennms-detector-registry/27.2.0</bundle>
+      <bundle>mvn:org.opennms/opennms-detectorclient-rpc/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-provisiond-requisitions" description="Minion :: Provisond :: Requisitions" version="27.2.0">
+      <feature>opennms-core-web</feature>
+      <feature>opennms-dao-api</feature>
+      <feature>opennms-provisioning</feature>
+      <feature>opennms-core-ipc-rpc-api</feature>
+      <bundle>mvn:org.opennms/opennms-requisition-service/27.2.0</bundle>
+      <bundle>mvn:org.opennms/opennms-requisition-dns/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-shell" description="Minion :: Shell" version="27.2.0">
+      <feature>minion-shell-provision</feature>
+      <feature>minion-shell-poller</feature>
+      <feature>minion-shell-collection</feature>
+    </feature>
+
+    <feature name="minion-shell-provision" description="Minion :: Shell :: Provision" version="27.2.0">
+      <feature>commons-lang</feature>
+      <feature>opennms-core</feature>
+      <feature>opennms-model</feature>
+      <feature>opennms-provisioning-api</feature>
+      <bundle>mvn:org.opennms/opennms-detector-registry/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.minion.shell/org.opennms.features.minion.shell.provision/27.2.0</bundle>
+    </feature>
+    
+    <feature name="minion-shell-poller" description="Minion :: Shell :: Poller" version="27.2.0">
+      <feature>minion-poller</feature>
+      <bundle>mvn:org.opennms.features.minion.shell/org.opennms.features.minion.shell.poller/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-poller" description="Minion :: Poller" version="27.2.0">
+      <feature>opennms-core-ipc-rpc-api</feature>
+      <feature>opennms-config-jaxb</feature>
+      <bundle>mvn:org.opennms.features.poller/org.opennms.features.poller.api/27.2.0</bundle>
+      <bundle>mvn:org.opennms.core.snmp/org.opennms.core.snmp.api/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.poller/org.opennms.features.poller.client-rpc/27.2.0</bundle>
+      <feature>opennms-poller-monitors-core</feature>
+    </feature>
+    
+    <feature name="minion-collection" description="Minion :: Collection" version="27.2.0">
+      <feature>commons-cli</feature>
+
+      <feature>opennms-config</feature>
+      <feature>opennms-config-jaxb</feature>
+      <feature>opennms-core-web</feature>
+      <!-- System classpath dependency of opennms-vmware -->
+      <feature>opennms-prometheus-collector</feature>
+      <feature>opennms-provisioning</feature>
+      <feature>opennms-vmware</feature>
+      <feature>opennms-xml-collector</feature>
+      <feature>wmi-integration</feature>
+      <feature>wsman-integration</feature>
+
+      <feature>opennms-core-ipc-rpc-api</feature>
+
+      <bundle>mvn:org.opennms.core.jmx/org.opennms.core.jmx.api/27.2.0</bundle>
+      <bundle>mvn:org.opennms.core.jmx/org.opennms.core.jmx.impl/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.api/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.client-rpc/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.collection/org.opennms.features.collection.collectors/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features/org.opennms.features.jdbc-collector/27.2.0</bundle>
+      <bundle>mvn:org.opennms.protocols/org.opennms.protocols.nsclient/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-shell-collection" description="Minion :: Shell :: Collection" version="27.2.0">
+      <feature>minion-collection</feature>
+      <bundle>mvn:org.opennms.features.minion.shell/org.opennms.features.minion.shell.collection/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-telemetryd-receivers" description="Minion :: Telemetry :: Receivers" version="27.2.0">
+      <feature version="4.1.48.Final">netty4</feature>
+      <feature>opennms-dnsresolver-api</feature>
+      <feature>dropwizard-metrics</feature>
+      <bundle>mvn:com.google.protobuf/protobuf-java/3.12.0</bundle>
+      <bundle>mvn:org.mongodb/bson/3.5.0</bundle>
+      <bundle>mvn:org.apache.commons/commons-csv/1.5</bundle>
+      <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.api/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.config/org.opennms.features.telemetry.config.api/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.config/org.opennms.features.telemetry.config.jaxb/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.common/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.registry/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry/org.opennms.features.telemetry.listeners/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.protocols/org.opennms.features.telemetry.protocols.common/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.protocols.bmp/org.opennms.features.telemetry.protocols.bmp.parser/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.protocols.bmp/org.opennms.features.telemetry.protocols.bmp.transport/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.protocols.netflow/org.opennms.features.telemetry.protocols.netflow.parser/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.protocols.netflow/org.opennms.features.telemetry.protocols.netflow.transport/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.protocols.sflow/org.opennms.features.telemetry.protocols.sflow.parser/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.distributed/org.opennms.features.telemetry.distributed.common/27.2.0</bundle>
+      <bundle>mvn:org.opennms.features.telemetry.distributed/org.opennms.features.telemetry.distributed.minion/27.2.0</bundle>
+    </feature>
+
+    <feature name="opennms-core-ipc-grpc-client" description="OpenNMS :: Core :: IPC :: GRPC :: Client" version="27.2.0">
+      <feature>opennms-core-ipc-sink-api</feature>
+      <feature>opennms-core-ipc-rpc-api</feature>
+      <bundle>mvn:org.opennms.core.grpc/org.opennms.core.grpc.osgi/27.2.0</bundle>
+      <bundle>mvn:org.opennms.core.ipc.grpc/org.opennms.core.ipc.grpc.common/27.2.0</bundle>
+      <bundle>mvn:org.opennms.core.ipc.grpc/org.opennms.core.ipc.grpc.client/27.2.0</bundle>
+    </feature>
+    
+    <feature name="dominion-grpc-client" description="Dominion :: GRPC :: Client" version="27.2.0">
+        <feature>minion-core-api</feature>
+        <bundle>mvn:org.opennms.core.grpc/org.opennms.core.grpc.osgi/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.minion/dominion-grpc-client/27.2.0</bundle>
+    </feature>
+
+    <feature name="dominion-secure-credentials-vault" description="Dominion :: Secure Credentials Vault" version="27.2.0">
+        <feature>scv-api</feature>
+        <feature>dominion-grpc-client</feature>
+        <bundle>mvn:org.opennms.features.scv/org.opennms.features.scv.dominion-grpc-impl/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-rest-client" description="Minion :: ReST Client" version="27.2.0">
+        <feature>opennms-health</feature>
+        <feature>scv-api</feature>
+
+        <bundle>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.4</bundle>
+        <bundle>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.2</bundle>
+        <bundle>mvn:com.google.code.gson/gson/2.8.5</bundle>
+        <bundle>mvn:org.opennms.features.minion/minion-rest-client/27.2.0</bundle>
+    </feature>
+
+</features>

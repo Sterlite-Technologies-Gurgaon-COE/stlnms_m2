@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:59:37 IST 2023
+org.apache.aries.blueprint.api-1.0.0.pom>central-https=
+org.apache.aries.blueprint.api-1.0.0.pom>central=
+org.apache.aries.blueprint.api-1.0.0.jar>central=

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:26 IST 2023
+hibernate-validator-4.3.2.Final.jar>central=
+hibernate-validator-4.3.2.Final.jar>central-https=
+hibernate-validator-4.3.2.Final.pom>central=
+hibernate-validator-4.3.2.Final.pom>central-https=

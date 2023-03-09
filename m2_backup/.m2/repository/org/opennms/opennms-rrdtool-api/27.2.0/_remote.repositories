@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:06:33 IST 2023
+opennms-rrdtool-api-27.2.0.jar>=
+opennms-rrdtool-api-27.2.0-sources.jar>=
+opennms-rrdtool-api-27.2.0.pom>=

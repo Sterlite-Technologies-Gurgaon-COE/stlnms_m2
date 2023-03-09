@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>SMSLIB: Te explico todo lo que puedes hacer en internet con un móvil</title>
+	<meta name="description" content="La tecnológia movil ha llegado a nuestras vidas para quedarse, te explico todo lo que he aprendido a hacer con un móvil, más que de tecnologia hablo del uso que le doy a ella." />
+	<link rel="canonical" href="https://smslib.org/" />
+	<link rel="next" href="https://smslib.org/page/2/" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://smslib.org/","url":"https://smslib.org/","name":"SMSLIB: Te explico todo lo que puedes hacer en internet con un móvil","isPartOf":{"@id":"https://smslib.org/#website"},"description":"La tecnológia movil ha llegado a nuestras vidas para quedarse, te explico todo lo que he aprendido a hacer con un móvil, más que de tecnologia hablo del uso que le doy a ella.","breadcrumb":{"@id":"https://smslib.org/#breadcrumb"},"inLanguage":"es"},{"@type":"BreadcrumbList","@id":"https://smslib.org/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada"}]},{"@type":"WebSite","@id":"https://smslib.org/#website","url":"https://smslib.org/","name":"SMS LIBRARY","description":"Mis historias con la tecnología","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://smslib.org/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"}]}</script>
+	<meta name="google-site-verification" content="4LuwzSCz7d4nMv_s_t2YrFhmlJKnlEv0Ed1fHVkSBg8" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="SMS LIBRARY &raquo; Feed" href="https://smslib.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SMS LIBRARY &raquo; Feed de los comentarios" href="https://smslib.org/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/smslib.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://smslib.org/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://smslib.org/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://smslib.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css' href='https://smslib.org/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-public.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css' href='https://smslib.org/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-gdpr.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://smslib.org/wp-content/themes/blog-mantra/assets/css/bootstrap.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://smslib.org/wp-content/themes/blog-mantra/assets/css/fontawesome-all.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='blog-mantra-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300i%2C400%2C400i%2C600%2C700%7CRoboto+Condensed%3A300%2C300i%2C400%2C400i%2C700&#038;subset=latin%2Clatin-ext&#038;ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css' href='https://smslib.org/wp-content/themes/blog-mantra/assets/css/owl.carousel.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-default-css' href='https://smslib.org/wp-content/themes/blog-mantra/assets/css/owl.theme.default.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='blog-mantra-style-css' href='https://smslib.org/wp-content/themes/blog-mantra/style.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='blog-mantra-media-css' href='https://smslib.org/wp-content/themes/blog-mantra/assets/css/media.css?ver=6.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://smslib.org/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://smslib.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#61a229","button_1_button_hover":"#4e8221","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#dedfe0","button_3_button_hover":"#b2b2b3","button_3_link_colour":"#333333","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#dedfe0","button_4_button_hover":"#b2b2b3","button_4_link_colour":"#333333","button_4_as_button":"1","button_7_button_colour":"#dbc236","button_7_button_hover":"#af9b2b","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"1","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#333333","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"Informaci\u00f3n sobre las cookies","cookie_bar_as":"popup","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/smslib.org\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://smslib.org/wp-content/plugins/cookie-law-info/legacy/public/js/cookie-law-info-public.js?ver=3.0.8' id='cookie-law-info-js'></script>
+<link rel="https://api.w.org/" href="https://smslib.org/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://smslib.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://smslib.org/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel="icon" href="https://smslib.org/wp-content/uploads/smslib.png" sizes="32x32" />
+<link rel="icon" href="https://smslib.org/wp-content/uploads/smslib.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://smslib.org/wp-content/uploads/smslib.png" />
+<meta name="msapplication-TileImage" content="https://smslib.org/wp-content/uploads/smslib.png" />
+		<style type="text/css" id="wp-custom-css">
+			.fubook{
+	width: 70%;
+	margin-left: 10%;
+	margin-top: -90px;
+}
+
+.footer {
+	background: white;
+}
+
+article p { 
+	padding-top: 1%;
+}		</style>
+		</head>
+
+<body class="home blog hfeed">
+
+<header>
+    <div class="top-header">
+        <div class="container">
+
+          <div class="site-branding logo">
+                    <h1 class="site-title"><a href="https://smslib.org/" rel="home">SMS LIBRARY</a></h1>
+                  <p class="site-description">Mis historias con la tecnología</p>
+              </div><!-- .site-branding -->
+
+          
+        </div><!--container-->
+    </div><!--top-header-->
+
+    <div class="header">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <div class="container">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                  
+                
+                <div class="search-form-wrapper">
+                            <div class="bm-searrch-header">
+                                <a class="bm-search-trigger" href="#bm-search"> <span></span></a>
+                                <!-- cd-header-buttons -->
+                            </div>
+                            <div id="bm-search" class="bm-search">
+                              <div class="container">
+
+                                
+                                  <form role="search" method="get" class="search-form" action="https://smslib.org/">
+				<label>
+					<span class="screen-reader-text">Buscar:</span>
+					<input type="search" class="search-field" placeholder="Buscar &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Buscar" />
+			</form>
+                                  
+                              </div>
+                            </div>
+                        </div>
+
+                
+             </div><!--container-->
+            </nav>
+       
+    </div><!--bottom-header-->
+
+    
+        
+</header>
+
+<main>
+
+
+
+<div class="main-content-wrapper">
+
+
+    <div id="content" class="container">
+      <div class="row ">
+
+
+	<section id ="primary" class="col-xs-12 col-sm-9 col-md-9 primary-wrapper">
+        <div id="main" class="site-main" role="main">
+
+		
+<article id="post-249" class="blog-list post-249 post type-post status-publish format-standard has-post-thumbnail hentry category-tecnologia">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/prostitutas-sinteticas-el-futuro-del-trabajo-sexual/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/Prostitutas-sinteticas-1.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="Prostitutas sintéticas-1" decoding="async" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <span class="post-comments">Comentarios desactivados<span class="screen-reader-text"> en Prostitutas sintéticas, ¿el futuro del trabajo sexual?</span></span>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 30 diciembre, 2022				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/prostitutas-sinteticas-el-futuro-del-trabajo-sexual/"> Prostitutas sintéticas, ¿el futuro del trabajo sexual? </a></h2>
+                    
+                    <p> 
+<p>Para definir las <strong>diferentes épocas de la historia,</strong> algunos expertos han añadido adjetivos al pronombre homo, en referencia al ser humano. Desde el homo erectus, el primer antepasado que se irguió sobre dos piernas, hasta el homo sapiens, el primero que desarrolló cierto pensamiento racional y lógico. Hoy en día hemos entrado en una nueva era, la <strong>del homo tecnologis</strong>, en referencia a la capacidad de la tecnología por cambiar nuestro mundo. En los últimos cien años, el ser humano ha variado tanto su forma de actuar, su entorno, sus propias costumbres, que se puede considerar <strong>casi una especie distinta</strong> a la que existía hace tiempo. Porque han sido estas herramientas tecnológicas novedosas las que nos han llevado a emprender un camino de progreso absoluto, que a veces hasta da miedo. ¿Estamos utilizando las <strong>tecnologías</strong> correctamente? Esto es algo que muchos se preguntan, a sabiendas del riesgo que supone dejarnos llevar por ese avance sin poder controlarlo del todo. La serie <strong>Black Mirror</strong> ya lo mostraba perfectamente en su momento, cómo el terror podía venir de una pantalla, de un simple like en una publicación. </p>
+
+
+
+<p>Pero a pesar de su originalidad y su incuestionable calidad, lo cierto es que Black Mirror no fue pionera en este aspecto. La <strong>ciencia ficción</strong> ya llevaba muchas décadas profundizando en cómo la tecnología podía cambiarnos como especie. En <strong>Blade Runner,</strong> por ejemplo, se mostraban los replicantes, androides con forma humana indistinguibles de humanos reales, pero que no poseían la capacidad de soñar. Algunos de esos replicantes eran utilizados para los trabajos más pesados, o aquellos que nadie quería hacer, como la <strong>prostitución</strong>. De hecho, más allá de ciudades envueltas en neón y vehículos voladores, aquella predicción de Ridley Scott a principios de los 80 sí que se ha cumplido. El avance de la tecnología nos ha traído <strong>robots sexuales</strong> que hoy por hoy están causando furor en muchos países asiáticos. Son vistos por muchos como una alternativa a la prostitución, aunque está claro que hay una enorme diferencia entre <strong>tener sexo</strong> con un robot a tenerlo con un ser de carne y hueso. Sin embargo, la relevancia de estas muñecas sexuales es cada vez mayor, y no podemos obviar eso de cara a un futuro cercano.   </p>
+
+
+
+ </p>
+
+                    <a href="https://smslib.org/prostitutas-sinteticas-el-futuro-del-trabajo-sexual/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-227" class="blog-list post-227 post type-post status-publish format-standard has-post-thumbnail hentry category-tecnologia">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/john-mcafee-la-sorprendente-vida-del-creador-del-antivirus/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/mcafee-creador.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="mcafee-creador" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <span class="post-comments">Comentarios desactivados<span class="screen-reader-text"> en John McAFee: la sorprendente vida del creador del antivirus</span></span>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 7 octubre, 2021				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/john-mcafee-la-sorprendente-vida-del-creador-del-antivirus/"> John McAFee: la sorprendente vida del creador del antivirus </a></h2>
+                    
+                    <p> 
+<p>Hay personas que saben, ya desde jóvenes, que están <strong>destinadas a hacer algo grande</strong>. No es que ocupen todo su empeño y sus fuerzas en lograr llegar más alto, sino simplemente saben que tienen algo especial, algo que les diferencia del resto. Algunos lo llaman <strong>don</strong>, otros <strong>talento</strong>, también hay muchos que consideran que es simplemente suerte… El caso es que muchas de estas personas ni siquiera llegan a oler ese éxito que tanto ansiaban, algo que les provoca una tremenda frustración aun llevando una vida confortable. En algunos pocos casos, esos que mantenían <strong>la mirada puesta en lo más alto</strong> finalmente consiguen llegar a la cima. Y por supuesto, no van a pecar de humildes cuando esto ocurre. Aprovechan <strong>su fama y sobre todo su dinero</strong> para llevar la vida que siempre quisieron, para ser la envidia de todos los que todavía sueñan con ser como ellos.</p>
+
+
+
+<p><strong>John McAfee</strong> fue una de esas personas. Un tipo absolutamente carismático, un genio para muchos, un hombre caído en desgracia para otros… La historia de McAfee es un fiel reflejo de cómo <strong>una mente brillante</strong> puede perderse por malas decisiones, y por un gusto demasiado extremo por la vida hedonista. Su biografía está llena de éxitos, pero también de <strong>escándalos</strong>, porque McAfee no había nacido para ser un tipo cualquiera, obviamente. El creador de uno de los primeros <strong>antivirus informáticos</strong> del mundo tuvo tiempo para ganar una fortuna, perderla casi toda, exiliarse a varios países, presentarse como candidato a la Presidencia de Estados Unidos y <strong>poner fin a su propia vida mientras estaba en la</strong> <strong>cárcel</strong>, acusado de delitos financieros. No vamos a decir que muriese joven, porque ya con 75 años McAfee había vivido prácticamente todo lo que una persona puede vivir en diez vidas, pero es cierto que el genio informático se fue antes de tiempo, de una manera extraña… Las <strong>conjeturas sobre su muerte</strong> se vienen dando desde el mismo día en que apareció su cadáver en una cárcel española. Aquel trágico final era un broche oscuro a una vida cuanto menos ajetreada.</p>
+
+
+
+ </p>
+
+                    <a href="https://smslib.org/john-mcafee-la-sorprendente-vida-del-creador-del-antivirus/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-209" class="blog-list post-209 post type-post status-publish format-standard has-post-thumbnail hentry category-moviles">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/carcasas-para-moviles-guia-de-compra/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/carcasas-moviles.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="carcasas-moviles" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <span class="post-comments">Comentarios desactivados<span class="screen-reader-text"> en Carcasas para móviles: guía de compra</span></span>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 5 abril, 2021				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/carcasas-para-moviles-guia-de-compra/"> Carcasas para móviles: guía de compra </a></h2>
+                    
+                    <p> 
+<p>Los <strong>teléfonos móviles</strong> llevan poco más de veinte años en nuestras vidas, pero parece que siempre han estado ahí. Hoy por hoy no hay nadie que salga de casa sin llevar encima este pequeño aparato, con <strong>la potencia de un ordenador</strong> y con la capacidad de introducirnos en un mundo virtual infinito en el que tenemos información, entretenimiento y todo lo que queramos en la palma de la mano. <strong>Antes los teléfonos servían para llamar o mandar mensajes</strong>, para comunicarnos con los demás, en el sentido más estricto de esa palabra. Sin embargo, ahora podemos grabar vídeos de calidad profesional, comprar cualquier cosa desde cualquier lugar, enterarnos de las últimas noticias o incluso <strong>aprender idiomas con nuestro pequeño y ligero Smartphone</strong>. La llegada de los teléfonos inteligentes supuso un punto de inflexión en este mercado, hoy por hoy ya tremendamente asentado y con <strong>unas ventas millonarias en todo el mundo.</strong></p>
+
+
+
+<p>Hay <strong>teléfonos más caros y otros más baratos</strong>, con más o menos opciones y características, con más o menos potencia en lo que a capacidad de almacenamiento se refiere, calidad de la cámara… <strong>Lo de menos, hoy por hoy, es llamar por teléfono</strong>, porque estamos comunicados de muchas formas diferentes. Eso sí, el estar todo el día trasteando con el teléfono para arriba y para abajo también tiene sus perjuicios, y es que <strong>corremos el riesgo de que se caiga y se rompa,</strong> o de que se ensucie más de lo debido, desgastándose más en ese periodo de tiempo. Para protegerlo, y también por qué no, para darle un toque más colorido y personal a nuestro teléfono, contamos con las famosas <strong>fundas y carcasas que nos ayudan a cuidarlo mucho más</strong>. Es un mercado que ha aparecido a raíz de los smartphones y que se ha convertido también en un sector muy lucrativo, dada la gran cantidad de opciones que encontramos a la venta. Aquí te vamos a dar <strong>algunos consejos para elegir la funda perfecta.</strong></p>
+
+
+
+ </p>
+
+                    <a href="https://smslib.org/carcasas-para-moviles-guia-de-compra/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-202" class="blog-list post-202 post type-post status-publish format-standard has-post-thumbnail hentry category-dispositivos">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/ipad-guia-de-compra-segun-tus-necesidades/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/guia-compra-ipad.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="guia-compra-ipad" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <span class="post-comments">Comentarios desactivados<span class="screen-reader-text"> en Ipad, guía de compra según tus necesidades</span></span>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 20 noviembre, 2020				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/ipad-guia-de-compra-segun-tus-necesidades/"> Ipad, guía de compra según tus necesidades </a></h2>
+                    
+                    <p> 
+<p><strong>Apple</strong> es una marca que siempre ha tratado de innovar, de llevar la mejor calidad posible en todos sus dispositivos para convertirlos en auténticas referencias en el mercado. El propio sello de la firma, <strong>la manzana mordida en su parte trasera</strong>, ya es sinónimo de calidad en cualquier aparato. Y no solo eso, sino que además Apple ha conseguido que el público en general quiera gastarse un dinero importante en sus productos, en muchas ocasiones solo para fardar de que tienen <strong>un&nbsp; iPhone, un iPad o un Mac</strong>. Es como un símbolo de estatus en el mundo en el que vivimos, de poder permitirse lo mejor de lo mejor. Sin embargo, <strong>¿necesitamos de verdad un aparato tan caro para realizar las típicas funciones del día a día con nuestro ordenador, Tablet o Smartphone?</strong> La respuesta, al menos en la mayoría de casos, es no.</p>
+
+
+
+<p>Sin embargo, si estás leyendo este artículo es porque <strong>tienes interés en alguno de los dispositivos de Apple del formato medio, es decir, las tablets</strong>. Como ya sabrás, desde la aparición del primer iPad, hace ya una década, Apple ha ido actualizando este dispositivo para mejorarlo, para llevarlo más allá y conseguir que se haga más potente, más vistoso, con&nbsp; un diseño más elegante, con más opciones… Actualmente <strong>existen varias versiones de este producto, todas ellas actualizadas cada año</strong>, para ganar un poco de potencia. Porque Apple ha entendido que, como ocurre con los smartphones, no todo el mundo necesita exactamente el mismo dispositivo, ya que no todos lo vamos a utilizar para la misma función. Por eso nosotros hemos querido <strong>reunir aquí algunos consejos para que encuentres el iPad perfecto para ti, </strong>el que te permita desarrollar tu trabajo o tu diversión de la mejor manera posible, sin pagar de más.</p>
+
+
+
+ </p>
+
+                    <a href="https://smslib.org/ipad-guia-de-compra-segun-tus-necesidades/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-196" class="blog-list post-196 post type-post status-publish format-standard has-post-thumbnail hentry category-dispositivos">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/logitech-g13-el-dispositivo-que-necesitas-en-tu-ordenador/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/logitech-g13.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="logitech-g13" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <a href="https://smslib.org/logitech-g13-el-dispositivo-que-necesitas-en-tu-ordenador/#respond" class="post-comments" >No Comments</a>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 16 julio, 2020				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/logitech-g13-el-dispositivo-que-necesitas-en-tu-ordenador/"> Logitech G13, el dispositivo que necesitas en tu ordenador </a></h2>
+                    
+                    <p> 
+<p>El mundo del <strong>videojuego</strong> está alcanzando cotas absolutamente increíbles, y actualmente ya mueve más dinero que toda la industria del cine y la música juntos. Las nuevas generaciones parecen nacer con un mando ya bajo el brazo, y la multiplicación de <strong>dispositivos móviles</strong>, así como la era dorada de las consolas de sobremesa, han permitido a esta industria expandirse de una forma absolutamente brutal. Se ha creado incluso todo un submundo dentro del videojuego, con la <strong>estética gamer,</strong> con dispositivos que nos ayudarán en nuestras partidas y que nos ofrecen la posibilidad de ser más competitivos cuando estamos en plena batalla, por ejemplo. Teclados, ratones, monitores con una calidad tremenda, tarjetas gráficas de cientos de euros que mueven los juegos más nuevos y potentes como si nada… El mundo gamer se sigue expandiendo y <strong>cada vez hay más periféricos y dispositivos disponibles</strong>.</p>
+
+
+
+<p>Claro que no todos son igualmente necesarios a la hora de jugar, y más allá de <strong>tener un buen mando y unos cascos con micro</strong> para los juegos cooperativos, en consola no se necesita mucho más. Sí juegas en ordenador ya es otra cosa, porque evidentemente, aquí estamos hablando también de <strong>un buen ratón y un buen teclado</strong>, o de buscarnos un mando compatible, que los hay y muy buenos, por cierto. Sin embargo, la opción que últimamente más se está llevando es la del <strong>gamepad</strong>, un dispositivo que auna todas las posibilidades del teclado y el ratón en el mismo periférico, con&nbsp; un diseño cómodo y eficaz para permitirnos jugar con mucha más libertad y tenerlo todo a mano a la hora de crear y llevar a cabo nuestras partidas. Por eso hoy queremos hablar del <strong>Logitech G13,</strong> seguramente el gamepad más popular del mercado.</p>
+
+
+
+ </p>
+
+                    <a href="https://smslib.org/logitech-g13-el-dispositivo-que-necesitas-en-tu-ordenador/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-77" class="blog-list post-77 post type-post status-publish format-standard has-post-thumbnail hentry category-citas">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/es-posible-tener-sexo-rapido-en-internet/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/portada-2.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <a href="https://smslib.org/es-posible-tener-sexo-rapido-en-internet/#comments" class="post-comments" >2 Comments</a>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 24 junio, 2020				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/es-posible-tener-sexo-rapido-en-internet/"> ¿Es posible tener sexo rápido en internet? </a></h2>
+                    
+                    <p> <p>Hay días, en los que no sabes por qué te entran unas ganas de sexo terribles, te pones en modo búsqueda on.   Lo primero que haces es empezar a tirar de chorbo agenda pero, cuando llegas a la Z y ves que no has sacado un plan en claro, toca buscar alternativas. Hoy os voy a contar mi experiencia de un día de esos, que al final salieron bien, qué opciones tomé y cómo llegué a ellas.</p>
+ </p>
+
+                    <a href="https://smslib.org/es-posible-tener-sexo-rapido-en-internet/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-190" class="blog-list post-190 post type-post status-publish format-standard has-post-thumbnail hentry category-videojuegos">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/han-contentado-a-los-fans-los-videojuegos-de-harry-potter/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/harry-potter-y-la-piedra-filosofal-videojuego.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="harry-potter-y-la-piedra-filosofal-videojuego" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <a href="https://smslib.org/han-contentado-a-los-fans-los-videojuegos-de-harry-potter/#respond" class="post-comments" >No Comments</a>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 20 mayo, 2020				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/han-contentado-a-los-fans-los-videojuegos-de-harry-potter/"> ¿Han contentado a los fans los videojuegos de Harry Potter? </a></h2>
+                    
+                    <p> 
+<p>El Código Da Vinci, Cincuenta Sombras De Grey… En los últimos tiempos hemos tenido <strong>sonados y espectaculares fenómenos literarios</strong>, de muy diferente calado y género. Autores semidesconocidos que de pronto eran capaces de vender millones de copias en todo el mundo y se convertían en superventas, creando <strong>best sellers</strong> en todo lo que tocaban. Pero si nos vamos un poco más atrás, a finales de los 90, encontraremos el auténtico fenómeno literario que ha cambiado el mundo para siempre. Nos referimos a la saga <strong>de Harry Potter, la franquicia fantástica creada por la autora británica J.K. Rowling</strong>, que provocó en su momento un auténtico boom de la literatura juvenil y se ha convertido con el paso de los años en la franquicia literaria más rentable de todos los tiempos.</p>
+
+
+
+<p>Y es que <strong>Harry Potter no se ha quedado solo en los libros, por supuesto</strong>. Su adaptación a la gran pantalla llegó tan solo unos años después del lanzamiento de la primera entrega, y supuso el espaldarazo definitivo para que la saga llegara mucho más lejos y conquistara a los fans en todo el mundo. Pero la cosa tampoco quedó ahí. A través de la empresa <strong>Wizarding World,</strong> Rowling controla actualmente todo el legado de Potter, con una cantidad infinita de productos de <strong>merchandasing</strong> y licencias que la han convertido en la mujer más rica del Reino Unido. Tazas, camisetas, parques de atracciones e incluso <strong>videojuegos</strong>, que ya en su momento ayudaron a la expansión de la franquicia en otros medios, y que todavía hoy siguen dando alegrías a los fans.</p>
+
+
+
+ </p>
+
+                    <a href="https://smslib.org/han-contentado-a-los-fans-los-videojuegos-de-harry-potter/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-179" class="blog-list post-179 post type-post status-publish format-standard has-post-thumbnail hentry category-videojuegos">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/blasphemous-un-increible-viaje-por-el-folklore-espanol-en-forma-de-metroidvania/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/blasphemous.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <a href="https://smslib.org/blasphemous-un-increible-viaje-por-el-folklore-espanol-en-forma-de-metroidvania/#respond" class="post-comments" >No Comments</a>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 28 octubre, 2019				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/blasphemous-un-increible-viaje-por-el-folklore-espanol-en-forma-de-metroidvania/"> Blasphemous, un increíble viaje por el folklore español en forma de Metroidvania </a></h2>
+                    
+                    <p> <p>El <strong>sector de los videojuegos</strong> se ha convertido ya en el más grande dentro del mundo del entretenimiento. Las cifras así lo atestiguan, y es que las ganancias de este sector superan ya a las de la música o incluso a las del cine<strong>. Miles de millones al año en juegos, estrenos, descargas para móviles, micropagos, etc…</strong> Todos tenemos una potencial consola de videojuegos en nuestro bolsillo, y los que no tienen suficiente con los juegos para móviles también siguen <strong>disfrutando de títulos más potentes en las consolas de sobremesa, en las portátiles e incluso en los ordenadores.</strong> Cada mes salen cientos de títulos nuevos en las tiendas online y son muchos los que siguen de cerca estos <strong>estrenos</strong>. Uno de los más sonados de los últimos tiempos ha sido el juego <strong>Blasphemous, creado por un estudio español</strong>.</p>
+<p>El juego, como tantos otros en esta época, <strong>se ha logrado financiar a través de una campaña de crowfunding en la plataforma Kickstarter</strong>. El estudio <strong>Game Kitchen</strong>, ubicado en Sevilla, decidió utilizar esta vía para poder llevar a cabo el juego sin la necesidad de contar con un estudio externo o con un distribuidor potente que luego se llevara todos los beneficios. <strong>Hay mucho de trabajo artesanal en Blasphemous, que ya desde el primer momento de su anuncio en aquella campaña llamó mucho la atención de los jugadores</strong> por utilizar un estilo visual muy impactante, con <strong>referencias a la cultura española y sobre todo, a la simbología religiosa, </strong>mezclándolo con un estilo de juego de plataformas en 2D muy similar a la saga Castlevania, por ejemplo.</p>
+ </p>
+
+                    <a href="https://smslib.org/blasphemous-un-increible-viaje-por-el-folklore-espanol-en-forma-de-metroidvania/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-173" class="blog-list post-173 post type-post status-publish format-standard has-post-thumbnail hentry category-dispositivos">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/tableta-o-portatil-es-posible-olvidarse-de-los-ordenadores-para-siempre/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/tableta-portatil-1.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="tableta-portatil" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <a href="https://smslib.org/tableta-o-portatil-es-posible-olvidarse-de-los-ordenadores-para-siempre/#respond" class="post-comments" >No Comments</a>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 22 julio, 2019				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/tableta-o-portatil-es-posible-olvidarse-de-los-ordenadores-para-siempre/"> Tableta o portátil, ¿es posible olvidarse de los ordenadores para siempre? </a></h2>
+                    
+                    <p> <p><strong>Las tabletas son dispositivos que ya forman parte de nuestras vidas</strong>, tanto así que están a punto de cumplir 10 años en el mercado, y desde el lanzamiento del primer iPad <strong>han surgido modelos tanto del sistema operativo iOS, como del sistema Android</strong> que han enganchado a más de un usuario. Desde mi punto de vista creo que las tabletas cada vez más se están haciendo un hueco mayor dentro de los hogares, tal que <strong>podríamos decir que se están convirtiendo en el sustituto perfecto del portátil.</strong></p>
+<p>Así como lo lees, desde hace un tiempo para acá hemos visto la <strong>llegada de dispositivos de un formato pequeño pero que son muy potentes y versátiles</strong> para todas esas tareas que necesitamos realizar. Es por esto que las marcas más reconocidas están trabajando en ofrecer, esa tableta en la que las personas que pasan la mayor parte de su tiempo fuera de casa puedan <strong>encontrar todas las aplicaciones necesarias en un formato reducido.</strong></p>
+ </p>
+
+                    <a href="https://smslib.org/tableta-o-portatil-es-posible-olvidarse-de-los-ordenadores-para-siempre/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+<article id="post-165" class="blog-list post-165 post type-post status-publish format-standard has-post-thumbnail hentry category-videojuegos">
+    <div class="wrap-meta">
+    <a href="https://smslib.org/juegos-multijugador-vs-single-player-mi-opinion-al-respecto/"><figure>
+    	<img width="651" height="366" src="https://smslib.org/wp-content/uploads/multivssing.jpg" class="attachment-blog-mantra-img size-blog-mantra-img wp-post-image" alt="" decoding="async" loading="lazy" />    	    </figure></a>
+
+    <div class="entry-meta meta-blog">
+        
+<!--         <span class="comments-link">
+            <i class="far fa-comment"></i>
+        <a href="https://smslib.org/juegos-multijugador-vs-single-player-mi-opinion-al-respecto/#respond" class="post-comments" >No Comments</a>        </span>   -->
+
+    </div><!--entry-meta-->
+    </div><!--wrap-meta-->
+	<div class="author">
+				Autor: Sergio				</div>
+			<div class="date">			
+			 Fecha de publicación: 23 mayo, 2019				</div>	
+    <div class="entry-content blog-text">
+        <div class="row">
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12 blog-right">
+
+            
+                <div class="text-blog">
+                    <h2><a href="https://smslib.org/juegos-multijugador-vs-single-player-mi-opinion-al-respecto/"> Juegos multijugador VS Single Player, mi opinión al respecto </a></h2>
+                    
+                    <p> <p><b>Soy jugón desde que tengo uso de razón</b>. Pasé horas y horas delante del televisor indagando a fondo en los niveles del primer <b>Sonic</b> de Megadrive, conduciendo los divertidos vehículos de <b>Mario Kart</b> para la NES, infiltrándome en los lugares más peligrosos en <b>Metal Gear Solid</b> de la primera Playstation o descubriendo Zanarkand en <b>Final Fantasy X</b> junto a mi hermano mayor. Por otro lado también lo pasé en grande luchando contra él en la saga <b>Mortal Kombat</b> (el príncipe Goro siempre fue mi personaje favorito), pateando el balón en <b>FIFA</b> o jugando con desconocidos en el divertimiento <b>Grand Theft Auto V</b>. Es por este motivo que no puedo negar mi gran pasión por este noble arte, el cual en los últimos años ha ido ganando relevancia (siendo acompañado, eso sí, por la dichosa <b>casualización</b>) y cada vez más y más empresas se han sumado a esta industria en auge…, y como era de esperar ha habido cambios en ella.</p>
+ </p>
+
+                    <a href="https://smslib.org/juegos-multijugador-vs-single-player-mi-opinion-al-respecto/" class="readmore"> Leer más <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div><!--text-blog-->
+            </div>
+        </div><!--row-->
+    </div><!--entry-content-->
+</article>
+
+	<nav class="navigation pagination" aria-label="Entradas">
+		<h2 class="screen-reader-text">Navegación de entradas</h2>
+		<div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="https://smslib.org/page/2/">2</a>
+<a class="next page-numbers" href="https://smslib.org/page/2/">Next &raquo;</a></div>
+	</nav>
+		
+	    </div><!--main-->
+	</section>
+
+
+<section id="secondary" class="col-xs-12 col-sm-3 col-md-3 secondary-wrapper">
+	<div class="sidebar">
+		
+		<aside id="recent-posts-2" class="widget widget_recent_entries">
+		<div class="widget-title title-sidebar"><h3 class="widget-title">Entradas recientes</h3></div>
+		<ul>
+											<li>
+					<a href="https://smslib.org/prostitutas-sinteticas-el-futuro-del-trabajo-sexual/">Prostitutas sintéticas, ¿el futuro del trabajo sexual?</a>
+									</li>
+											<li>
+					<a href="https://smslib.org/john-mcafee-la-sorprendente-vida-del-creador-del-antivirus/">John McAFee: la sorprendente vida del creador del antivirus</a>
+									</li>
+											<li>
+					<a href="https://smslib.org/carcasas-para-moviles-guia-de-compra/">Carcasas para móviles: guía de compra</a>
+									</li>
+											<li>
+					<a href="https://smslib.org/ipad-guia-de-compra-segun-tus-necesidades/">Ipad, guía de compra según tus necesidades</a>
+									</li>
+											<li>
+					<a href="https://smslib.org/logitech-g13-el-dispositivo-que-necesitas-en-tu-ordenador/">Logitech G13, el dispositivo que necesitas en tu ordenador</a>
+									</li>
+					</ul>
+
+		</aside>	</div>
+</section><!-- #secondary -->
+
+		</div><!--row-->
+
+	
+    </div><!--container-->
+</div><!--main-content-wrapper-->
+
+</main>
+
+<footer>
+
+	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				
+					
+			            	<div class="col-sm">
+
+                                <aside id="text-4" class="widget widget_text">			<div class="textwidget"><p><!--a href="https://smslib.org/tick/fubook/" target="_blank" rel="nofollow noopener"><img decoding="async" class="fubook" src="https://smslib.org/wp-content/uploads/fubook.jpg" alt="banner" /></a--></p>
+</div>
+		</aside>
+			            	</div><!-- .col -->
+
+			            
+
+			</div><!--row-->
+		</div><!--container-->
+	</div><!--top-footer-->
+
+	
+	<div class="bottom-footer">
+		<div class="container">
+
+			
+			<div class="copyright-area">
+
+				© Copyright 2023 – Smslib.org | <a href="https://smslib.org/sobre-mi/">Página de contacto</a> | <a href="https://smslib.org/politica-privacidad/">Políticas de privacidad</a>				
+				
+			</div><!--copyright-area-->
+		</div><!--container-->
+	</div><!--bottom-footer-->
+
+	
+	<a href="#" class ="scrollToTop">
+        <i class="fas fa-level-up-alt"></i>
+    </a><!--to-top-->
+
+    
+</footer>
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><h5 class="cli_messagebar_head">Información sobre las cookies</h5><span><div><div>En este sitio web usamos cookies para brindarle una mejor experiencia de usuario. Al hacer clic en 'Aceptar todo', acepta el uso de TODAS las cookies. Para saber más, puede visitar nuestra página de <a href="/politica-privacidad/">Aviso legal</a> situada en el footer</div><div><a role='button' class="medium cli-plugin-button cli-plugin-main-button cli_settings_button" style="margin:0px 5px 0px 0px">Ajuste de cookies</a><a id="wt-cli-accept-all-btn" role='button' data-cli_action="accept_all" class="wt-cli-element medium cli-plugin-button wt-cli-accept-all-btn cookie_action_close_header cli_action_button">Aceptar todas</a></div></div></span></div><div id="cookie-law-info-again" data-nosnippet="true"><span id="cookie_hdr_showagain">Manage consent</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Cerrar</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Resumen de privacidad</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">Este sitio web utiliza cookies para mejorar su experiencia mientras navega por el sitio web. De estas, las cookies que se clasifican como necesarias se almacenan en su navegador, ya que son esenciales para el funcionamiento de las funcionalidades básicas del sitio web. También utilizamos cookies de terceros que nos ayudan a analizar y comprender cómo utiliza este sitio web. Estas cookies se almacenarán en su navegador solo con su consentimiento. También tiene la opción de optar por no recibir estas cookies. Pero la exclusión voluntaria de algunas de estas cookies puede afectar su experiencia de navegación.</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Mostrar más" role="button" data-readmore-text="Mostrar más" data-readless-text="Mostrar menos"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necesarias							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necesarias</label>
+								</div>
+								<span class="cli-necessary-caption">Siempre activado</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Las cookies necesarias son absolutamente esenciales para que el sitio web funcione correctamente. Estas cookies garantizan funcionalidades básicas y características de seguridad del sitio web, de forma anónima. <table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Duración</th><th class="cookielawinfo-column-4">Descripción</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-analytics</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Analytics".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-functional</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Functional".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookies is used to store the user consent for the cookies in the category "Necessary".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-others</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Other.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-performance</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Performance".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by the GDPR Cookie Consent plugin and is used to store whether or not user has consented to the use of cookies. It does not store any personal data.</td></tr></tbody></table>								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+								Funcionales							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox"  data-id="checkbox-functional" />
+									<label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Activado" data-cli-disable="Desactivado"><span class="wt-cli-sr-only">Funcionales</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="functional">
+								<div class="wt-cli-cookie-description">
+									Las cookies funcionales ayudan a realizar ciertas funcionalidades, como compartir el contenido del sitio web en plataformas de redes sociales, recopilar comentarios y otras características de terceros.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+								Rendimento							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox"  data-id="checkbox-performance" />
+									<label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Activado" data-cli-disable="Desactivado"><span class="wt-cli-sr-only">Rendimento</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="performance">
+								<div class="wt-cli-cookie-description">
+									Las cookies de rendimiento se utilizan para comprender y analizar los índices de rendimiento clave del sitio web, lo que ayuda a brindar una mejor experiencia de usuario a los visitantes. 								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+								Analíticas							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox"  data-id="checkbox-analytics" />
+									<label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Activado" data-cli-disable="Desactivado"><span class="wt-cli-sr-only">Analíticas</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="analytics">
+								<div class="wt-cli-cookie-description">
+									Las cookies analíticas se utilizan para comprender cómo los visitantes interactúan con el sitio web. Estas cookies ayudan a proporcionar información sobre métricas, el número de visitantes, la tasa de rebote, la fuente de tráfico, etc.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+								Anuncio publicitario							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-advertisement" class="cli-user-preference-checkbox"  data-id="checkbox-advertisement" />
+									<label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Activado" data-cli-disable="Desactivado"><span class="wt-cli-sr-only">Anuncio publicitario</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="advertisement">
+								<div class="wt-cli-cookie-description">
+									Las cookies publicitarias se utilizan para proporcionar a los visitantes anuncios y campañas de marketing relevantes. Estas cookies rastrean a los visitantes en los sitios web y recopilan información para proporcionar anuncios personalizados.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+								Otras							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox"  data-id="checkbox-others" />
+									<label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Activado" data-cli-disable="Desactivado"><span class="wt-cli-sr-only">Otras</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="others">
+								<div class="wt-cli-cookie-description">
+									Otras cookies no categorizadas son las que se están analizando y aún no se han clasificado en una categoría.								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">GUARDAR Y ACEPTAR</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><link rel='stylesheet' id='cookie-law-info-table-css' href='https://smslib.org/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-table.css?ver=3.0.8' type='text/css' media='all' />
+<script type='text/javascript' src='https://smslib.org/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.2' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/smslib.org\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://smslib.org/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.2' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://smslib.org/wp-content/themes/blog-mantra/assets/js/bootstrap.min.js?ver=4.0.0' id='bootstrap-js'></script>
+<script type='text/javascript' src='https://smslib.org/wp-content/themes/blog-mantra/assets/js/fontawesome-all.min.js?ver=5.0.0' id='fontawesome-js'></script>
+<script type='text/javascript' src='https://smslib.org/wp-content/themes/blog-mantra/assets/js/owl.carousel.min.js?ver=2.2.1' id='owl-carousel-js'></script>
+<script type='text/javascript' id='blog-mantra-custom-js-extra'>
+/* <![CDATA[ */
+var blog_mantra_script_vars = {"autoPlaySpeed":"5000","autoplayTimeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://smslib.org/wp-content/themes/blog-mantra/assets/js/custom.js?ver=20151215' id='blog-mantra-custom-js'></script>
+<script type='text/javascript' src='https://smslib.org/wp-content/themes/blog-mantra/assets/js/sticky.header.js?ver=20151216' id='blog-mantra-sticky-header-js'></script>
+<script type='text/javascript' src='https://smslib.org/wp-content/themes/blog-mantra/assets/js/navigation.js?ver=20151217' id='blog-mantra-navigation-js'></script>
+<script type='text/javascript' src='https://smslib.org/wp-content/themes/blog-mantra/assets/js/skip-link-focus-fix.js?ver=20151218' id='blog-mantra-skip-link-focus-fix-js'></script>
+
+</body>
+</html>

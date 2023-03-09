@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:55:57 IST 2023
+jetty-util-6.1.26.jar>central=
+jetty-util-6.1.26.pom>central-https=
+jetty-util-6.1.26.jar>central-https=
+jetty-util-6.1.26.pom>central=

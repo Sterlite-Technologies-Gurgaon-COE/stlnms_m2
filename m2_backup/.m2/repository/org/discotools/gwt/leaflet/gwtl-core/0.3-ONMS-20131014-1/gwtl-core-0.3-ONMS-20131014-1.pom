@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- POM file generated with GWT webAppCreator -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.discotools.gwt.leaflet</groupId>
+		<artifactId>gwtl</artifactId>
+		<version>0.3-ONMS-20131014-1</version>
+	</parent>
+
+	<artifactId>gwtl-core</artifactId>
+	<packaging>jar</packaging>
+	<name>gwtl-core</name>
+	<url>http://www.discotools.org</url>
+
+	<!-- gwtl-core properties -->
+	<properties>
+		<!-- www.leaflet.org script version: "relative/path/to/"leaflet.js -->
+		<version.leaflet>origin/master/</version.leaflet>
+	</properties>
+
+	<!-- Profiles -->
+	<profiles>
+		<profile>
+			<id>debug</id>
+			<properties>
+				<version.leaflet.js>${version.leaflet}/leaflet-src.js</version.leaflet.js>
+			</properties>
+		</profile>
+		<profile>
+			<id>release</id>
+			<properties>
+				<version.leaflet.js>${version.leaflet}/leaflet.js</version.leaflet.js>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencies>
+
+		<!-- Google Web Toolkit -->
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Validation -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<classifier>sources</classifier>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.extcos</groupId>
+			<artifactId>extcos</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<!-- Generate compiled stuff in the folder used for developing mode -->
+		<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
+
+		<plugins>
+
+			<!-- Activate GWT Maven Plugin -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>gwt-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Copy static web files before executing gwt:run -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

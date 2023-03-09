@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.apache.directory</groupId>
+    <artifactId>build</artifactId>
+    <version>1.0.5</version>
+  </parent>
+  <groupId>org.apache.directory.shared</groupId>
+  <artifactId>build</artifactId>
+  <name>Apache Directory Shared</name>
+  <packaging>pom</packaging>  
+  <version>0.9.5.5</version>
+  <modules>
+    <module>asn1</module>
+    <module>ldap</module>
+    <module>asn1-codec</module>
+  </modules>
+
+  <scm>
+    <connection>scm:svn:https://svn.apache.org/repos/asf/directory/shared/releases/build-0.9.5.5</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/directory/shared/releases/build-0.9.5.5</developerConnection>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0-beta-5</version>
+        <configuration>
+          <tagBase>https://svn.apache.org/repos/asf/directory/shared/releases</tagBase>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.0-alpha-3</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>2.0.2</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.2</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.opennms</groupId>
+    <artifactId>master</artifactId>
+    <version>6</version>
+    <relativePath>../master</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>org.opennms.lib</artifactId>
+  <packaging>pom</packaging>
+  <name>OpenNMS Libraries</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <modules>
+<!-- don't include them here, include them in the top-level
+    <module>joesnmp</module>
+    <module>service-registration</module>
+    <module>snmp</module>
+-->
+  </modules>
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>

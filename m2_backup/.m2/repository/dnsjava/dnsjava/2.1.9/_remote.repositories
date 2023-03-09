@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:58 IST 2023
+dnsjava-2.1.9-sources.jar>central=
+dnsjava-2.1.9.jar>central=
+dnsjava-2.1.9.pom>central=
+dnsjava-2.1.9-sources.jar>central-https=
+dnsjava-2.1.9.pom>central-https=
+dnsjava-2.1.9.jar>central-https=

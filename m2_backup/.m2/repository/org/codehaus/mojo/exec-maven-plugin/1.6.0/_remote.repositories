@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:49:03 IST 2023
+exec-maven-plugin-1.6.0.pom>central-https=
+exec-maven-plugin-1.6.0.jar>central-https=
+exec-maven-plugin-1.6.0.jar>central=

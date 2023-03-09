@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:53:09 IST 2023
+org.apache.karaf.jaas.modules-4.2.6.jar>central=
+org.apache.karaf.jaas.modules-4.2.6.pom>central=
+org.apache.karaf.jaas.modules-4.2.6.pom>central-https=
+org.apache.karaf.jaas.modules-4.2.6.jar>central-https=

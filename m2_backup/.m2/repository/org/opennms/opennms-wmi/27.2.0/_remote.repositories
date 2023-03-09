@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:08:09 IST 2023
+opennms-wmi-27.2.0.jar>=
+opennms-wmi-27.2.0.pom>=
+opennms-wmi-27.2.0-sources.jar>=

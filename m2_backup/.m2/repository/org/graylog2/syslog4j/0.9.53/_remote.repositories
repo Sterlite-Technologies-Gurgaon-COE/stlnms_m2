@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Mar 06 12:55:18 IST 2023
+syslog4j-0.9.53.jar>central=
+syslog4j-0.9.53.jar>central-https=
+syslog4j-0.9.53.pom>central=
+syslog4j-0.9.53.pom>central-https=

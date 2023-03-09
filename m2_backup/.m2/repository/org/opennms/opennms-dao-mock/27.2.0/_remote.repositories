@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:06:27 IST 2023
+opennms-dao-mock-27.2.0.jar>=
+opennms-dao-mock-27.2.0-sources.jar>=
+opennms-dao-mock-27.2.0.pom>=

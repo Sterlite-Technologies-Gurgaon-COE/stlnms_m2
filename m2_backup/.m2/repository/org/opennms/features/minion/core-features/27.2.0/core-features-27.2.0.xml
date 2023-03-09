@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features name="minion-core-features" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+
+    <!-- Apache ActiveMQ features -->
+    <repository>mvn:org.apache.activemq/activemq-karaf/5.14.5/xml/features</repository>
+
+    <!-- Apache Camel features -->
+    <repository>mvn:org.apache.camel.karaf/apache-camel/2.19.1/xml/features</repository>
+
+    <feature name="minion-core" description="Minion :: Core" version="27.2.0">
+        <feature>camel-core</feature>
+        <feature>camel-blueprint</feature>
+        <feature>camel-jaxb</feature>
+        <feature>opennms-distributed-core-impl</feature>
+
+        <bundle>mvn:org.opennms.features.minion/core-impl/27.2.0</bundle>
+    </feature>
+
+    <feature name="geronimo-jms-api" description="Apache Geronimo :: JMS :: API" version="1.1.1">
+        <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-annotation_1.0_spec/1.1.1</bundle>
+        <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
+        <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1</bundle>
+    </feature>
+
+    <feature name="minion-jms" description="Minion :: Core :: JMS" version="27.2.0">
+        <feature>minion-core</feature>
+        <feature>geronimo-jms-api</feature>
+
+        <!-- Needed by activemq-camel -->
+        <bundle>mvn:javax.annotation/javax.annotation-api/1.2</bundle>
+        <feature>activemq-camel</feature>
+
+        <!-- This is also defined in "sentinel-jms" -->
+        <bundle>mvn:org.opennms.core.health/org.opennms.core.health.api/27.2.0</bundle>
+        <bundle>mvn:org.opennms.features.distributed/jms/27.2.0</bundle>
+    </feature>
+
+    <feature name="minion-core-shell" description="Minion :: Core :: Shell" version="27.2.0">
+        <feature>minion-core</feature>
+        <feature>geronimo-jms-api</feature>
+        <bundle>mvn:org.opennms.features.distributed/shell/27.2.0</bundle>
+    </feature>
+</features>

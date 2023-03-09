@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features name="opennms-integration-api-features" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+
+    <feature name="opennms-integration-api" description="OpenNMS Integration API" version="0.5.1">
+        <bundle dependency="true">mvn:com.google.guava/guava/26.0-jre</bundle>
+        <bundle>mvn:org.opennms.integration.api/api/0.5.1</bundle>
+        <bundle>mvn:org.opennms.integration.api/common/0.5.1</bundle>
+        <bundle>mvn:org.opennms.integration.api/config/0.5.1</bundle>
+    </feature>
+
+    <feature name="opennms-integration-api-sample-project" description="OpenNMS Integration API :: Sample Project" version="0.5.1">
+        <feature version="0.5.1" dependency="true">opennms-integration-api</feature>
+        <bundle>mvn:org.opennms.integration.api.sample/sample-project/0.5.1</bundle>
+    </feature>
+
+</features>

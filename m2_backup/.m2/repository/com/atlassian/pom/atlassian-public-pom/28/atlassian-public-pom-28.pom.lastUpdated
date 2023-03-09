@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:56:51 IST 2023
+https\://repo1.maven.org/maven2/.error=
+http\://maven.atlassian.com/content/repositories/atlassian-public/.error=
+http\://maven.opennms.org/content/repositories/atlassian-public/.lastUpdated=1677745611659
+https\://repo1.maven.org/maven2/.lastUpdated=1677745609843
+http\://maven.atlassian.com/content/repositories/atlassian-public/.lastUpdated=1677745610539

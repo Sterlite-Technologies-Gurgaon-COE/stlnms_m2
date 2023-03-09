@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:15:14 IST 2023
+http\://maven.opennms.org/content/repositories/sonatype-public-repo/.lastUpdated=1677750312542
+https\://repo1.maven.org/maven2/.lastUpdated=1677750314455
+@default-http\://maven.opennms.org/content/repositories/oosnmp-repo/.lastUpdated=1677750313288
+http\://maven.opennms.org/content/groups/opennms.org-release/.lastUpdated=1677750311706
+http\://maven.opennms.org/content/repositories/coova/.error=
+http\://maven.opennms.org/content/repositories/oosnmp-repo/.error=Could not transfer artifact org.apache.servicemix.bundles\:org.apache.servicemix.bundles.spring-expression\:pom\:4.2.5.RELEASE_1 from/to oosnmp-repo (http\://maven.opennms.org/content/repositories/oosnmp-repo)\: Failed to transfer file http\://maven.opennms.org/content/repositories/oosnmp-repo/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-expression/4.2.5.RELEASE_1/org.apache.servicemix.bundles.spring-expression-4.2.5.RELEASE_1.pom with status code 502
+http\://maven.opennms.org/content/repositories/sonatype-public-repo/.error=
+http\://maven.opennms.org/content/groups/opennms.org-release/.error=
+http\://maven.opennms.org/content/repositories/coova/.lastUpdated=1677750314125

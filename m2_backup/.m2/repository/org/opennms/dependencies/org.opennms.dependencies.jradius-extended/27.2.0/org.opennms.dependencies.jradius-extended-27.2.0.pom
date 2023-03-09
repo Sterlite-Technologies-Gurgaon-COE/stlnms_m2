@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>dependencies</artifactId>
+    <groupId>org.opennms</groupId>
+    <version>27.2.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.opennms.dependencies</groupId>
+  <artifactId>org.opennms.dependencies.jradius-extended</artifactId>
+  <name>OpenNMS :: Dependencies :: JRadius :: Extended</name>
+  <description>This module is used to provide a single artifact that the OpenNMS project
+    can depend on to use the jradius-extended library.</description>
+  <licenses>
+    <license>
+      <name>GNU Lesser/Library Public License, Version 3.0</name>
+      <url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+    </license>
+    <license>
+      <name>GNU Public License, Version 3.0</name>
+      <url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+    </license>
+  </licenses>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>${maven.shade.plugin.version}</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <includes>
+                  <include>net.jradius:jradius-extended</include>
+                  <include>org.bouncycastle:*</include>
+                </includes>
+              </artifactSet>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/BCKEY.DSA</exclude>
+                    <exclude>META-INF/BCKEY.SF</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+              <relocations>
+                <relocation>
+                  <pattern>org.bouncycastle</pattern>
+                  <shadedPattern>org.opennms.shaded.org.bouncycastle</shadedPattern>
+                </relocation>
+              </relocations>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <releases />
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>coova</id>
+      <name>Coova Repository</name>
+      <url>http://maven.opennms.org/content/repositories/coova/</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.9.4</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>commons-logging</artifactId>
+          <groupId>commons-logging</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>
+

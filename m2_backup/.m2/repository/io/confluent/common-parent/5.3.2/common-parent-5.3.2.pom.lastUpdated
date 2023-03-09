@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:55:00 IST 2023
+http\://maven.opennms.org/content/groups/opennms.org-release/.lastUpdated=1677745499712
+https\://repo1.maven.org/maven2/.error=
+http\://maven.opennms.org/content/groups/opennms.org-release/.error=
+https\://packages.confluent.io/maven/.lastUpdated=1677745500671
+https\://repo1.maven.org/maven2/.lastUpdated=1677745498984

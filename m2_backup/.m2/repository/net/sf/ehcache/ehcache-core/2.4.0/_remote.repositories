@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:47:50 IST 2023
+ehcache-core-2.4.0.jar>central-https=
+ehcache-core-2.4.0.jar>central=
+ehcache-core-2.4.0.pom>central-https=
+ehcache-core-2.4.0.pom>central=

@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:22:00 IST 2023
+opennms-rancid-provisioning-adapter-27.2.0-sources.jar>=
+opennms-rancid-provisioning-adapter-27.2.0.jar>=
+opennms-rancid-provisioning-adapter-27.2.0.pom>=

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:53:09 IST 2023
+guice-4.2.1-no_aop.jar>central-https=
+guice-4.2.1.pom>central-https=
+guice-4.2.1-no_aop.jar>central=
+guice-4.2.1.pom>central=

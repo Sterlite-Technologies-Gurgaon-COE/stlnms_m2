@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:46:38 IST 2023
+camel-http-2.19.1.pom>central=
+camel-http-2.19.1.pom>central-https=
+camel-http-2.19.1.jar>central-https=
+camel-http-2.19.1.jar>central=

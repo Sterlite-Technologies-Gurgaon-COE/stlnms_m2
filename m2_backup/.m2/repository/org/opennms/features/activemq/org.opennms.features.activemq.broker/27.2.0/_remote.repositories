@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:09:19 IST 2023
+org.opennms.features.activemq.broker-27.2.0.pom>=
+org.opennms.features.activemq.broker-27.2.0-activemq-receiver.xml>=
+org.opennms.features.activemq.broker-27.2.0-activemq-dispatcher.xml>=
+org.opennms.features.activemq.broker-27.2.0-activemq-receiver.cfg>=
+org.opennms.features.activemq.broker-27.2.0-activemq-dispatcher.cfg>=

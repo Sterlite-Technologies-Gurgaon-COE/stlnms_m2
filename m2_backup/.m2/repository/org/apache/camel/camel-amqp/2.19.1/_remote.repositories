@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:54:23 IST 2023
+camel-amqp-2.19.1.jar>central=
+camel-amqp-2.19.1.pom>central=

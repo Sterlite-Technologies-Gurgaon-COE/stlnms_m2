@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:08:16 IST 2023
+opennms-27.2.0.pom>=
+opennms-27.2.0-experimental.xml>=
+opennms-27.2.0-karaf-extensions.xml>=
+opennms-27.2.0-minion.xml>=
+opennms-27.2.0-spring-legacy.xml>=
+opennms-27.2.0-spring.xml>=
+opennms-27.2.0-standard.xml>=
+opennms-27.2.0-sentinel.xml>=
+opennms-27.2.0-features.xml>=

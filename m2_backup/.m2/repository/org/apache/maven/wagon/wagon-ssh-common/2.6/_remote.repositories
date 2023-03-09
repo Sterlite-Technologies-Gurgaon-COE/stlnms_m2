@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 13:45:45 IST 2023
+wagon-ssh-common-2.6.pom>central-https=
+wagon-ssh-common-2.6.jar>central-https=
+wagon-ssh-common-2.6.jar>central=
+wagon-ssh-common-2.6.pom>central=

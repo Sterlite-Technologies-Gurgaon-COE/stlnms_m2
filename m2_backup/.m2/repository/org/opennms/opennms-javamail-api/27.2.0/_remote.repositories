@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 15:06:31 IST 2023
+opennms-javamail-api-27.2.0.jar>=
+opennms-javamail-api-27.2.0-sources.jar>=
+opennms-javamail-api-27.2.0.pom>=
